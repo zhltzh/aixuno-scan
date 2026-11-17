@@ -481,4 +481,30 @@ function nextFrame() {
   return new Promise((resolve) => requestAnimationFrame(() => resolve()));
 }
 
+const revealObserver =
+  'IntersectionObserver' in window
+    ? new IntersectionObserver(
+        (entries) => {
+          for (const entry of entries) {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('in');
+              revealObserver.unobserve(entry.target);
+            }
+          }
+        },
+        { threshold: 0.12 }
+      )
+    : null;
+
+function observeReveals() {
+  if (!revealObserver) {
+    for (const el of document.querySelectorAll('.reveal')) el.classList.add('in');
+    return;
+  }
+  for (const el of document.querySelectorAll('.reveal:not(.in)')) {
+    revealObserver.observe(el);
+  }
+}
+
 renderPageList();
+observeReveals();
