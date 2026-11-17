@@ -1,0 +1,8 @@
+node_modules/
+dist/
+e2e-assets/
+.playwright-mcp/
+*.local
+.wrangler/
+public/tesseract/
+public/tessdata/

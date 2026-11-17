@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Aixuno Scan — Free Online Document Scanner, OCR &amp; PDF Tools (Local Processing)</title>
+    <meta
+      name="description"
+      content="Turn phone photos into crisp scanned PDFs. Auto edge detection, perspective correction, enhancement filters, and local OCR. 100% local processing — your files never leave your device."
+    />
+    <meta name="theme-color" content="#2563eb" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Aixuno Scan" />
+    <meta property="og:title" content="Aixuno Scan — Free Online Document Scanner" />
+    <meta
+      property="og:description"
+      content="Scan documents with your phone or browser. Auto edge detection, magic enhancement filters, OCR, and multi-page PDF export. Nothing is uploaded."
+    />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='5' fill='%232563eb'/%3E%3Cpath fill='%23fff' d='M17 5H7a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2Zm0 12H7l2.5-3 2 2.5 2.5-3 3.5 3.5Zm-6.4-4.8a1.4 1.4 0 1 0 0-2.8 1.4 1.4 0 0 0 0 2.8Z'/%3E%3C/svg%3E" />
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="brand">
+        <a href="https://aixuno.com/">Aixuno</a>
+        <span class="brand-sep">/</span>
+        <span class="brand-current">Scan</span>
+      </div>
+      <nav class="topnav">
+        <a href="#how-it-works" data-i18n="nav_how">How it works</a>
+        <a href="#features" data-i18n="nav_features">Features</a>
+        <a href="#privacy" data-i18n="nav_privacy">Privacy</a>
+        <a href="#faq" data-i18n="nav_faq">FAQ</a>
+      </nav>
+      <div class="topbar-right">
+        <div class="privacy-badge">
+          <svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true">
+            <path
+              fill="currentColor"
+              d="M12 2 4 5v6c0 5 3.4 9.4 8 11 4.6-1.6 8-6 8-11V5l-8-3Zm0 10.5h6c-.5 3.4-2.8 6.4-6 7.7v-7.7H6.2c.3-1.4.8-2.7 1.5-3.8L12 10.5Z"
+            />
+          </svg>
+          <span data-i18n="badge_privacy">Local processing · nothing is uploaded</span>
+        </div>
+        <div class="lang-switch" id="lang-switch" role="group" aria-label="Language"></div>
+      </div>
+    </header>
+
+    <main id="app">
+      <section id="view-empty" class="view">
+        <div class="hero">
+          <h1 data-i18n="hero_title">Free Online Document Scanner</h1>
+          <p class="sub" data-i18n="hero_sub">Turn photos into crisp, professional PDF scans — right in your browser.</p>
+          <ul class="hero-badges">
+            <li data-i18n="hero_badge_1">No upload</li>
+            <li data-i18n="hero_badge_2">No sign-up</li>
+            <li data-i18n="hero_badge_3">No watermark</li>
+          </ul>
+        </div>
+        <div id="dropzone" class="dropzone" tabindex="0" role="button"
+          aria-label="Upload images to scan">
+          <input id="file-input" type="file" accept="image/*" multiple hidden />
+          <div class="dz-inner">
+            <svg viewBox="0 0 24 24" width="44" height="44" aria-hidden="true">
+              <path
+                fill="currentColor"
+                d="M19 5H5a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2Zm0 12H5l4-5 3 4 3-4 4 5Zm-9.5-6a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z"
+              />
+            </svg>
+            <p class="dz-main"><strong data-i18n="dz_main_strong">Drop images here</strong> <span data-i18n="dz_main_rest">or click to browse</span></p>
+            <p class="dz-hint" data-i18n="dz_hint">JPG · PNG · WebP · multiple pages supported</p>
+          </div>
+        </div>
+        <button id="btn-camera" class="btn btn-secondary btn-block" data-i18n="btn_camera">Use camera</button>
+        <p class="footnote" data-i18n="footnote_privacy">
+          Your images are processed entirely on this device. Nothing is uploaded, ever.
+        </p>
+
+        <section class="section" id="how-it-works">
+          <h2 data-i18n="steps_h2">From photo to PDF in three steps</h2>
+          <div class="steps">
+            <div class="step">
+              <span class="step-num">01</span>
+              <h3 data-i18n="step1_title">Add your photos</h3>
+              <p data-i18n="step1_desc">Drop images, browse your files, or capture with your camera. Multiple pages are supported in one go.</p>
+            </div>
+            <div class="step">
+              <span class="step-num">02</span>
+              <h3 data-i18n="step2_title">Adjust &amp; enhance</h3>
+              <p data-i18n="step2_desc">Edges are detected automatically — fine-tune the corners, then pick a filter like Magic Color or B&amp;W for a crisp, scanner-like look.</p>
+            </div>
+            <div class="step">
+              <span class="step-num">03</span>
+              <h3 data-i18n="step3_title">Export or OCR</h3>
+              <p data-i18n="step3_desc">Merge everything into a clean multi-page PDF, or run on-device OCR and copy the text, download it as .txt or .md.</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="features">
+          <h2 data-i18n="features_h2">Everything a scanner app does — without the upload</h2>
+          <div class="features">
+            <div class="feature">
+              <div class="feature-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path fill="currentColor" d="M3 5h18v2H3V5Zm0 6h18v2H3v-2Zm0 6h12v2H3v-2Z"/></svg>
+              </div>
+              <h3 data-i18n="feat1_title">Auto edge detection</h3>
+              <p data-i18n="feat1_desc">The paper is found automatically — even at an angle, on a cluttered desk, or under uneven light.</p>
+            </div>
+            <div class="feature">
+              <div class="feature-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path fill="currentColor" d="M6 2h9l5 5v15H6V2Zm8 1.5V8h4.5L14 3.5ZM8 12h8v1.6H8V12Zm0 3.5h8V17H8v-1.5Z"/></svg>
+              </div>
+              <h3 data-i18n="feat2_title">Perspective correction</h3>
+              <p data-i18n="feat2_desc">Tilted shots are straightened into a flat, top-down view. Choose auto sizing or lock to A4.</p>
+            </div>
+            <div class="feature">
+              <div class="feature-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 3a9 9 0 1 0 9 9h-2a7 7 0 1 1-7-7V3Zm1 4v5l4 2-.8 1.6L11 12.5V7h2Z"/></svg>
+              </div>
+              <h3 data-i18n="feat3_title">5 enhancement filters</h3>
+              <p data-i18n="feat3_desc">Magic Color removes shadows, B&amp;W binarizes for maximum legibility — plus grayscale and brighten.</p>
+            </div>
+            <div class="feature">
+              <div class="feature-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path fill="currentColor" d="M4 5h16v3H4V5Zm0 5.5h16v3H4v-3ZM4 16h10v3H4v-3Zm12 0 5 1.5-5 1.5v-3Z"/></svg>
+              </div>
+              <h3 data-i18n="feat4_title">On-device OCR</h3>
+              <p data-i18n="feat4_desc">Recognize English and Chinese text locally and export it as .txt or .md — ready for your notes or editor.</p>
+            </div>
+            <div class="feature">
+              <div class="feature-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path fill="currentColor" d="M4 4h6v2H6v12h4v2H4V4Zm10 0h6v16h-6v-2h4V6h-4V4Z"/></svg>
+              </div>
+              <h3 data-i18n="feat5_title">Multi-page PDF</h3>
+              <p data-i18n="feat5_desc">Combine pages, reorder them, and export one clean PDF with correct page sizes — free, with no watermark.</p>
+            </div>
+            <div class="feature">
+              <div class="feature-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 2 4 5v6c0 5 3.4 9.4 8 11 4.6-1.6 8-6 8-11V5l-8-3Zm0 10.5h6c-.5 3.4-2.8 6.4-6 7.7v-7.7H6.2c.3-1.4.8-2.7 1.5-3.8L12 10.5Z"/></svg>
+              </div>
+              <h3 data-i18n="feat6_title">100% local processing</h3>
+              <p data-i18n="feat6_desc">Detection, filters, OCR, and PDF creation all run in your browser. Contracts and IDs never leave your device.</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="section privacy-section" id="privacy">
+          <h2 data-i18n="privacy_h2">Your documents stay on your device</h2>
+          <p class="privacy-sub" data-i18n="privacy_sub">
+            Unlike cloud scanners, Aixuno Scan has no server to send anything to. Every step —
+            from edge detection to OCR — runs locally in your browser tab.
+          </p>
+          <ul class="privacy-list">
+            <li data-i18n="privacy_li_1">No account, no sign-up, no tracking of your documents</li>
+            <li data-i18n="privacy_li_2">Works offline after the first load (OCR models are cached by your browser)</li>
+            <li data-i18n="privacy_li_3">Safe for contracts, IDs, medical records, and other sensitive paperwork</li>
+          </ul>
+        </section>
+
+        <section class="section" id="faq">
+          <h2 data-i18n="faq_h2">Frequently asked questions</h2>
+          <details class="faq-item">
+            <summary data-i18n="faq1_q">Is Aixuno Scan really free?</summary>
+            <p data-i18n="faq1_a">Yes. All features — including OCR and PDF export — are free, with no watermark and no sign-up.</p>
+          </details>
+          <details class="faq-item">
+            <summary data-i18n="faq2_q">Are my documents uploaded to a server?</summary>
+            <p data-i18n="faq2_a">No. Edge detection, enhancement, OCR, and PDF creation run entirely in your browser. You can even disconnect from the internet after the page loads.</p>
+          </details>
+          <details class="faq-item">
+            <summary data-i18n="faq3_q">What image formats can I scan?</summary>
+            <p data-i18n="faq3_a">JPG, PNG, and WebP from any source — photos from your phone, screenshots, or files. You can also capture pages directly with your device camera.</p>
+          </details>
+          <details class="faq-item">
+            <summary data-i18n="faq4_q">Which languages does OCR support?</summary>
+            <p data-i18n="faq4_a">English and Simplified Chinese (with English mixed in) are available today, with more planned. Recognition runs on your device.</p>
+          </details>
+          <details class="faq-item">
+            <summary data-i18n="faq5_q">Does it work on my phone?</summary>
+            <p data-i18n="faq5_a">Yes — the layout is fully responsive and camera capture works on mobile browsers (HTTPS required, which any hosted site provides).</p>
+          </details>
+          <details class="faq-item">
+            <summary data-i18n="faq6_q">How is this different from CamScanner?</summary>
+            <p data-i18n="faq6_a">No cloud upload, no account, no watermark, and no subscription. The trade-off: advanced AI retouching (moiré removal, finger occlusion restoration) is not available — core scanning and OCR are.</p>
+          </details>
+        </section>
+      </section>
+
+      <section id="view-pages" class="view" hidden>
+        <h1 class="view-title" data-i18n="view_title">Your scan</h1>
+        <div class="ocr-bar">
+          <label for="ocr-lang" data-i18n="ocr_label">OCR language</label>
+          <select id="ocr-lang"></select>
+        </div>
+        <div id="page-grid" class="page-grid"></div>
+        <div class="actions-row">
+          <button id="btn-add-more" class="btn btn-secondary" data-i18n="btn_add_pages">Add pages</button>
+          <button id="btn-clear" class="btn btn-danger" data-i18n="btn_clear">Clear all</button>
+          <button id="btn-export" class="btn btn-primary" data-i18n="btn_export">Download PDF</button>
+        </div>
+        <p id="page-count" class="footnote"></p>
+      </section>
+
+      <section id="view-ocr" class="ocr-modal" hidden>
+        <div class="ocr-panel">
+          <div class="ocr-head">
+            <span class="ocr-title" data-i18n="ocr_title">Recognized text</span>
+            <span id="ocr-confidence" class="ocr-conf"></span>
+            <button id="btn-ocr-close" class="icon-btn" aria-label="Close">✕</button>
+          </div>
+          <textarea id="ocr-text" spellcheck="false"></textarea>
+          <div class="ocr-actions">
+            <button id="btn-ocr-copy" class="btn btn-secondary" data-i18n="btn_copy">Copy</button>
+            <button id="btn-ocr-txt" class="btn btn-secondary" data-i18n="btn_txt">Download .txt</button>
+            <button id="btn-ocr-md" class="btn btn-primary" data-i18n="btn_md">Download .md</button>
+          </div>
+        </div>
+      </section>
+
+      <section id="view-editor" class="editor" hidden>
+        <div class="editor-top">
+          <button id="btn-editor-cancel" class="btn btn-ghost" data-i18n="btn_cancel">Cancel</button>
+          <span id="editor-title" class="editor-title"></span>
+          <button id="btn-editor-done" class="btn btn-primary" data-i18n="btn_done">Done</button>
+        </div>
+        <div class="editor-canvas-wrap">
+          <canvas id="editor-canvas"></canvas>
+          <div id="editor-status" class="editor-status"></div>
+          <div id="editor-preview-box" class="editor-preview-box">
+            <span class="editor-preview-label" data-i18n="preview_label">Preview</span>
+            <img id="editor-preview" alt="Scan preview" hidden />
+          </div>
+        </div>
+        <div class="editor-toolbar">
+          <div id="filter-bar" class="filter-bar"></div>
+          <div class="ratio-bar">
+            <label class="chip"><input type="radio" name="ratio" value="original" checked /><span data-i18n="ratio_auto">Auto</span></label>
+            <label class="chip"><input type="radio" name="ratio" value="a4" /><span data-i18n="ratio_a4">A4</span></label>
+          </div>
+        </div>
+      </section>
+
+      <section id="view-camera" class="camera" hidden>
+        <video id="camera-video" autoplay playsinline muted></video>
+        <div class="camera-top">
+          <button id="btn-camera-cancel" class="btn btn-ghost" aria-label="Close camera">✕</button>
+        </div>
+        <div class="camera-bottom">
+          <button id="btn-shutter" class="shutter" aria-label="Capture photo"></button>
+        </div>
+      </section>
+
+      <div id="busy" class="busy" hidden>
+        <div class="spinner" role="progressbar" aria-label="Processing"></div>
+        <p id="busy-text">Processing…</p>
+      </div>
+      <div id="toast" class="toast" role="status" hidden></div>
+    </main>
+
+    <footer class="site-footer">
+      <p class="footer-brand">Aixuno Scan</p>
+      <p class="footer-tag" data-i18n="footer_tag">Scan, enhance, and OCR documents — locally in your browser.</p>
+      <nav class="footer-nav">
+        <a href="https://aixuno.com/" data-i18n="footer_link_converter">Markdown Converter</a>
+        <a href="https://image.aixuno.com/" data-i18n="footer_link_image">Image Tools</a>
+        <a href="https://compress.aixuno.com/">File Compress</a>
+        <a href="https://pdf.aixuno.com/">PDF Tools</a>
+        <a href="https://bg.aixuno.com/">AI Cutout</a>
+        <a href="https://tools.aixuno.com/">AI Tools</a>
+        <a href="#privacy" data-i18n="nav_privacy">Privacy</a>
+        <a href="#faq" data-i18n="nav_faq">FAQ</a>
+      </nav>
+      <p class="footer-note" data-i18n="footer_note">100% local processing · no accounts · no uploads</p>
+    </footer>
+
+    <script type="module" src="/src/app/main.js"></script>
+  </body>
+</html>
