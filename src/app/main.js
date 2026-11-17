@@ -13,6 +13,7 @@ import { initEditor, openEditor, closeEditor } from './editor.js';
 import { renderPageToCanvas } from './render.js';
 import { buildPDF, timestampedFilename } from './pdf.js';
 import { recognizePage, OCR_LANGUAGES } from './ocr.js';
+import { pageToPNGBlob, pagesToZIPBlob } from './images.js';
 import { t, applyStaticTexts, setLang, getLang, LANGUAGES } from './i18n.js';
 
 const THUMB_MAX_SIDE = 560;
@@ -34,6 +35,7 @@ const dom = {
   btnAddMore: document.getElementById('btn-add-more'),
   btnClear: document.getElementById('btn-clear'),
   btnExport: document.getElementById('btn-export'),
+  btnExportImages: document.getElementById('btn-export-images'),
   pageCount: document.getElementById('page-count'),
   busyText: document.getElementById('busy-text'),
   ocrLang: document.getElementById('ocr-lang'),
@@ -301,6 +303,9 @@ function renderPageList() {
       iconButton('T', t('btn_ocr'), () => {
         void runOCR(index);
       }),
+      iconButton('⤓', t('btn_download_image'), () => {
+        void downloadPageImage(index);
+      }),
       iconButton('↑', t('btn_move_up'), () => {
         swapPages(index, index - 1);
       }),
@@ -370,6 +375,49 @@ dom.btnExport.addEventListener('click', async () => {
     toast(t('toast_pdf_failed'));
   } finally {
     dom.btnExport.disabled = false;
+  }
+});
+
+async function downloadPageImage(index) {
+  const page = pages[index];
+  if (!page) return;
+  try {
+    showBusy(t('busy_render_image'));
+    const blob = await pageToPNGBlob(page);
+    hideBusy();
+    downloadBlob(blob, timestampedFilename('aixuno-scan-page', `png`, index + 1));
+  } catch (err) {
+    hideBusy();
+    toast(t('toast_image_failed'));
+  }
+}
+
+dom.btnExportImages.addEventListener('click', async () => {
+  if (pages.length === 0) return;
+  dom.btnExportImages.disabled = true;
+  try {
+    if (pages.length === 1) {
+      showBusy(t('busy_render_image'));
+      const blob = await pageToPNGBlob(pages[0]);
+      hideBusy();
+      downloadBlob(blob, timestampedFilename('aixuno-scan-image', 'png'));
+      toast(t('toast_image_ready'));
+      return;
+    }
+    showBusy(t('busy_render_image'));
+    const blob = await pagesToZIPBlob(pages, {
+      onProgress: (done, total) => {
+        dom.busyText.textContent = t('busy_render_page', { i: done, n: total });
+      },
+    });
+    hideBusy();
+    downloadBlob(blob, timestampedFilename('aixuno-scan-images', 'zip'));
+    toast(t('toast_images_ready', { n: pages.length }));
+  } catch (err) {
+    hideBusy();
+    toast(t('toast_image_failed'));
+  } finally {
+    dom.btnExportImages.disabled = false;
   }
 });
 

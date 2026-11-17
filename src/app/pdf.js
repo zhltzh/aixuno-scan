@@ -56,13 +56,14 @@ export async function buildPDF(pages, { onProgress } = {}) {
   return doc;
 }
 
-export function timestampedFilename(prefix = 'aixuno-scan', ext = 'pdf') {
+export function timestampedFilename(prefix = 'aixuno-scan', ext = 'pdf', suffix) {
   const d = new Date();
   const pad = (n) => String(n).padStart(2, '0');
   const stamp =
     `${d.getFullYear()}${pad(d.getMonth() + 1)}${pad(d.getDate())}` +
     `-${pad(d.getHours())}${pad(d.getMinutes())}`;
-  return `${prefix}-${stamp}.${ext}`;
+  const tail = suffix != null ? `-${String(suffix).padStart(2, '0')}` : '';
+  return `${prefix}${tail}-${stamp}.${ext}`;
 }
 
 function nextFrame() {
