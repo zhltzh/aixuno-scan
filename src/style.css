@@ -53,6 +53,102 @@ body {
   background: rgba(47, 107, 255, 0.18);
 }
 
+/* ---------- 跨站导航 ---------- */
+
+.site-network {
+  border-bottom: 1px solid var(--line);
+  background: #fff;
+}
+
+.site-network__inner {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 7px 24px;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.site-network__inner::-webkit-scrollbar {
+  display: none;
+}
+
+.site-net__brand {
+  flex: 0 0 auto;
+  margin-right: 4px;
+  color: var(--ink-soft);
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.site-network a,
+.site-network .site-net__item {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  flex: 0 0 auto;
+  padding: 5px 11px 5px 6px;
+  border-radius: 8px;
+  color: var(--ink-soft);
+  font-size: 12px;
+  font-weight: 650;
+  white-space: nowrap;
+  text-decoration: none;
+}
+
+.site-network a:hover {
+  color: var(--ink);
+  background: var(--bg-soft);
+}
+
+.site-network .is-current {
+  color: #fff;
+  background: var(--ink);
+}
+
+.site-net__mark {
+  display: inline-grid;
+  place-items: center;
+  height: 20px;
+  min-width: 26px;
+  padding: 0 4px;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 10px;
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: 0.02em;
+}
+
+.site-net__mark--amber { background: linear-gradient(135deg, #fbbf24, #f97316); }
+.site-net__mark--fuchsia { background: linear-gradient(135deg, #d946ef, #ec4899); }
+.site-net__mark--sky { background: linear-gradient(135deg, #0ea5e9, #10b981); }
+.site-net__mark--rose { background: linear-gradient(135deg, #f43f5e, #ef4444); }
+.site-net__mark--violet { background: linear-gradient(135deg, #8b5cf6, #6366f1); }
+.site-net__mark--blue { background: linear-gradient(135deg, #3b82f6, #1d4ed8); }
+.site-net__mark--indigo { background: linear-gradient(135deg, #6366f1, #4f46e5); }
+.site-net__mark--cyan { background: linear-gradient(135deg, #06b6d4, #2563eb); }
+
+.site-network .is-current .site-net__mark {
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.3);
+}
+
+@media (max-width: 760px) {
+  .site-net__brand {
+    display: none;
+  }
+
+  .site-network__inner {
+    justify-content: flex-start;
+    -webkit-mask-image: linear-gradient(90deg, #000 86%, transparent);
+    mask-image: linear-gradient(90deg, #000 86%, transparent);
+  }
+}
+
 /* ---------- 顶栏 ---------- */
 
 .topbar {
@@ -1563,9 +1659,54 @@ body {
   text-decoration: underline;
 }
 
+.footer-nav .footer-site-current {
+  color: var(--ink);
+  font-weight: 700;
+}
+
 .footer-note {
   margin: 0;
   color: #98a1b3;
+}
+
+/* ---------- 支撑页 ---------- */
+
+.prose-page {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 48px 24px 64px;
+  width: 100%;
+}
+
+.prose-page h1 {
+  font-size: 30px;
+  letter-spacing: -0.02em;
+  margin: 0 0 8px;
+}
+
+.prose-page .updated {
+  color: var(--ink-soft);
+  font-size: 13px;
+  margin: 0 0 28px;
+}
+
+.prose-page h2 {
+  font-size: 20px;
+  margin: 32px 0 10px;
+}
+
+.prose-page p,
+.prose-page li {
+  color: #374151;
+  font-size: 15px;
+}
+
+.prose-page ul {
+  padding-left: 22px;
+}
+
+.prose-page a {
+  color: var(--accent);
 }
 
 @keyframes spin {

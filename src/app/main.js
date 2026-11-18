@@ -3,6 +3,7 @@ import {
   decodeImageFile,
   imageToImageData,
   showBusy,
+  updateBusy,
   hideBusy,
   toast,
   downloadBlob,
@@ -15,6 +16,10 @@ import { buildPDF, timestampedFilename } from './pdf.js';
 import { recognizePage, OCR_LANGUAGES } from './ocr.js';
 import { pageToPNGBlob, pagesToZIPBlob } from './images.js';
 import { t, applyStaticTexts, setLang, getLang, LANGUAGES } from './i18n.js';
+import { renderSiteNetwork, renderFooterNav } from './network.js';
+
+renderSiteNetwork('scan');
+renderFooterNav('scan');
 
 const THUMB_MAX_SIDE = 560;
 let nextId = 1;
@@ -426,9 +431,13 @@ dom.btnExportImages.addEventListener('click', async () => {
 async function runOCR(index) {
   const page = pages[index];
   if (!page) return;
-  showBusy(t('busy_ocr'));
+  const busyLabel = t('busy_ocr');
+  showBusy(busyLabel);
   try {
-    const result = await recognizePage(page, dom.ocrLang.value);
+    const result = await recognizePage(page, dom.ocrLang.value, (status, progress) => {
+      const pct = Math.round(progress * 100);
+      updateBusy(`${busyLabel} ${pct}%`);
+    });
     dom.ocrText.value = result.text;
     dom.ocrConfidence.textContent = result.confidence
       ? t('ocr_conf', { n: result.confidence })

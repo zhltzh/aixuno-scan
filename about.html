@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>About | Aixuno Scan</title>
+    <meta name="description" content="About Aixuno Scan — a free, local-first document scanner that runs entirely in your browser. Part of the Aixuno tool ecosystem." />
+    <meta name="theme-color" content="#070b16" />
+    <link rel="canonical" href="https://scan.aixuno.com/about.html" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='5' fill='%232563eb'/%3E%3Cpath fill='%23fff' d='M17 5H7a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2Zm0 12H7l2.5-3 2 2.5 2.5-3 3.5 3.5Zm-6.4-4.8a1.4 1.4 0 1 0 0-2.8 1.4 1.4 0 0 0 0 2.8Z'/%3E%3C/svg%3E" />
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <div id="site-network"></div>
+    <header class="topbar">
+      <div class="brand">
+        <a href="./index.html">Aixuno</a>
+        <span class="brand-sep">/</span>
+        <span class="brand-current">Scan</span>
+      </div>
+      <nav class="topnav">
+        <a href="./index.html" data-i18n="nav_scan">Scan</a>
+        <a href="./index.html#how-it-works" data-i18n="nav_how">How it works</a>
+        <a href="./index.html#faq" data-i18n="nav_faq">FAQ</a>
+      </nav>
+      <div class="topbar-right">
+        <div class="lang-switch" id="lang-switch" role="group" aria-label="Language"></div>
+      </div>
+    </header>
+    <main id="app">
+      <section class="prose-page">
+        <h1>About Aixuno Scan</h1>
+        <p class="updated">Last updated: November 2026</p>
+        <p>Aixuno Scan is a free online document scanner that runs entirely in your browser. It turns phone photos into crisp, professional scans with automatic edge detection, perspective correction, enhancement filters, and on-device OCR — and none of your files are ever uploaded to a server.</p>
+        <h2>Why local-first</h2>
+        <p>Scanned documents are often the most sensitive files people handle: contracts, IDs, medical records, lecture notes. We believe a scanner should never ask you to hand those over. That is why every step — detection, filtering, OCR, and PDF creation — happens on your device.</p>
+        <h2>The Aixuno ecosystem</h2>
+        <p>Aixuno Scan is part of the Aixuno tool family: a Markdown converter, Pixkit image tools, file compression, PDF utilities, AI background removal, old photo restoration, and video watermark removal. Each tool is free, requires no account, and processes your files locally whenever the task allows it.</p>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <p class="footer-brand">Aixuno <span class="grad">Scan</span></p>
+      <p class="footer-tag" data-i18n="footer_tag">Scan, enhance, and OCR documents — locally in your browser.</p>
+      <div id="footer-sites"></div>
+      <div id="footer-pages"></div>
+      <p class="footer-note" data-i18n="footer_note">100% local processing · no accounts · no uploads</p>
+    </footer>
+    <script type="module">
+      import { applyStaticTexts, setLang, getLang, LANGUAGES } from '/src/app/i18n.js';
+      import { renderSiteNetwork, renderFooterNav } from '/src/app/network.js';
+      renderSiteNetwork('scan');
+      renderFooterNav('scan');
+      applyStaticTexts();
+      const host = document.getElementById('lang-switch');
+      function render() {
+        host.innerHTML = '';
+        for (const lang of LANGUAGES) {
+          const btn = document.createElement('button');
+          btn.type = 'button';
+          btn.className = 'lang-btn' + (getLang() === lang.id ? ' active' : '');
+          btn.textContent = lang.label;
+          btn.addEventListener('click', () => setLang(lang.id));
+          host.appendChild(btn);
+        }
+      }
+      render();
+      window.addEventListener('langchange', render);
+    </script>
+  </body>
+</html>

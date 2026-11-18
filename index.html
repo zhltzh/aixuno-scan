@@ -9,6 +9,7 @@
       content="Turn phone photos into crisp scanned PDFs or images. Auto edge detection, perspective correction, enhancement filters, and local OCR. 100% local processing — your files never leave your device."
     />
     <meta name="theme-color" content="#070b16" />
+    <link rel="canonical" href="https://scan.aixuno.com/" />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Aixuno Scan" />
     <meta property="og:title" content="Aixuno Scan — Free Online Document Scanner" />
@@ -16,10 +17,29 @@
       property="og:description"
       content="Scan documents with your phone or browser. Auto edge detection, magic enhancement filters, OCR, and multi-page PDF/PNG export. Nothing is uploaded."
     />
+    <meta property="og:url" content="https://scan.aixuno.com/" />
+    <meta property="og:image" content="https://scan.aixuno.com/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "Aixuno Scan",
+        "applicationCategory": "UtilitiesApplication",
+        "operatingSystem": "Web",
+        "url": "https://scan.aixuno.com/",
+        "description": "Free online document scanner with auto edge detection, enhancement filters, local OCR and multi-page PDF/PNG export. 100% local processing.",
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+        "isAccessibleForFree": true
+      }
+    </script>
     <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='5' fill='%232563eb'/%3E%3Cpath fill='%23fff' d='M17 5H7a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2Zm0 12H7l2.5-3 2 2.5 2.5-3 3.5 3.5Zm-6.4-4.8a1.4 1.4 0 1 0 0-2.8 1.4 1.4 0 0 0 0 2.8Z'/%3E%3C/svg%3E" />
     <link rel="stylesheet" href="/src/style.css" />
   </head>
   <body>
+    <div id="site-network"></div>
     <header class="topbar">
       <div class="brand">
         <a href="https://aixuno.com/">Aixuno</a>
@@ -466,16 +486,8 @@
     <footer class="site-footer">
       <p class="footer-brand">Aixuno <span class="grad">Scan</span></p>
       <p class="footer-tag" data-i18n="footer_tag">Scan, enhance, and OCR documents — locally in your browser.</p>
-      <nav class="footer-nav">
-        <a href="https://aixuno.com/" data-i18n="footer_link_converter">Markdown Converter</a>
-        <a href="https://image.aixuno.com/" data-i18n="footer_link_image">Image Tools</a>
-        <a href="https://compress.aixuno.com/">File Compress</a>
-        <a href="https://pdf.aixuno.com/">PDF Tools</a>
-        <a href="https://bg.aixuno.com/">AI Cutout</a>
-        <a href="https://tools.aixuno.com/">AI Tools</a>
-        <a href="#privacy" data-i18n="nav_privacy">Privacy</a>
-        <a href="#faq" data-i18n="nav_faq">FAQ</a>
-      </nav>
+      <div id="footer-sites"></div>
+      <div id="footer-pages"></div>
       <p class="footer-note" data-i18n="footer_note">100% local processing · no accounts · no uploads</p>
     </footer>
 

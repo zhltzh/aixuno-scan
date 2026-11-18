@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact Us | Aixuno Scan</title>
+    <meta name="description" content="Contact the Aixuno Scan team with questions, feedback or partnership ideas." />
+    <meta name="theme-color" content="#070b16" />
+    <link rel="canonical" href="https://scan.aixuno.com/contact.html" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='5' fill='%232563eb'/%3E%3Cpath fill='%23fff' d='M17 5H7a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2Zm0 12H7l2.5-3 2 2.5 2.5-3 3.5 3.5Zm-6.4-4.8a1.4 1.4 0 1 0 0-2.8 1.4 1.4 0 0 0 0 2.8Z'/%3E%3C/svg%3E" />
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <div id="site-network"></div>
+    <header class="topbar">
+      <div class="brand">
+        <a href="./index.html">Aixuno</a>
+        <span class="brand-sep">/</span>
+        <span class="brand-current">Scan</span>
+      </div>
+      <nav class="topnav">
+        <a href="./index.html" data-i18n="nav_scan">Scan</a>
+        <a href="./index.html#how-it-works" data-i18n="nav_how">How it works</a>
+        <a href="./index.html#faq" data-i18n="nav_faq">FAQ</a>
+      </nav>
+      <div class="topbar-right">
+        <div class="lang-switch" id="lang-switch" role="group" aria-label="Language"></div>
+      </div>
+    </header>
+    <main id="app">
+      <section class="prose-page">
+        <h1>Contact Us</h1>
+        <p class="updated">Last updated: November 2026</p>
+        <p>We read every message and usually reply within a few days.</p>
+        <h2>Email</h2>
+        <p><a href="mailto:hello@aixuno.com">hello@aixuno.com</a></p>
+        <h2>Feedback</h2>
+        <p>Found a bug or have a feature idea? Tell us which browser and device you used, and attach a sample scan if possible — please avoid sending private or sensitive documents.</p>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <p class="footer-brand">Aixuno <span class="grad">Scan</span></p>
+      <p class="footer-tag" data-i18n="footer_tag">Scan, enhance, and OCR documents — locally in your browser.</p>
+      <div id="footer-sites"></div>
+      <div id="footer-pages"></div>
+      <p class="footer-note" data-i18n="footer_note">100% local processing · no accounts · no uploads</p>
+    </footer>
+    <script type="module">
+      import { applyStaticTexts, setLang, getLang, LANGUAGES } from '/src/app/i18n.js';
+      import { renderSiteNetwork, renderFooterNav } from '/src/app/network.js';
+      renderSiteNetwork('scan');
+      renderFooterNav('scan');
+      applyStaticTexts();
+      const host = document.getElementById('lang-switch');
+      function render() {
+        host.innerHTML = '';
+        for (const lang of LANGUAGES) {
+          const btn = document.createElement('button');
+          btn.type = 'button';
+          btn.className = 'lang-btn' + (getLang() === lang.id ? ' active' : '');
+          btn.textContent = lang.label;
+          btn.addEventListener('click', () => setLang(lang.id));
+          host.appendChild(btn);
+        }
+      }
+      render();
+      window.addEventListener('langchange', render);
+    </script>
+  </body>
+</html>

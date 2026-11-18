@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Terms of Service | Aixuno Scan</title>
+    <meta name="description" content="Aixuno Scan terms of service — free, local-first document scanning provided as-is." />
+    <meta name="theme-color" content="#070b16" />
+    <link rel="canonical" href="https://scan.aixuno.com/terms.html" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='5' fill='%232563eb'/%3E%3Cpath fill='%23fff' d='M17 5H7a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2Zm0 12H7l2.5-3 2 2.5 2.5-3 3.5 3.5Zm-6.4-4.8a1.4 1.4 0 1 0 0-2.8 1.4 1.4 0 0 0 0 2.8Z'/%3E%3C/svg%3E" />
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <div id="site-network"></div>
+    <header class="topbar">
+      <div class="brand">
+        <a href="./index.html">Aixuno</a>
+        <span class="brand-sep">/</span>
+        <span class="brand-current">Scan</span>
+      </div>
+      <nav class="topnav">
+        <a href="./index.html" data-i18n="nav_scan">Scan</a>
+        <a href="./index.html#how-it-works" data-i18n="nav_how">How it works</a>
+        <a href="./index.html#faq" data-i18n="nav_faq">FAQ</a>
+      </nav>
+      <div class="topbar-right">
+        <div class="lang-switch" id="lang-switch" role="group" aria-label="Language"></div>
+      </div>
+    </header>
+    <main id="app">
+      <section class="prose-page">
+        <h1>Terms of Service</h1>
+        <p class="updated">Last updated: November 2026</p>
+        <h2>1. The service</h2>
+        <p>Aixuno Scan is a free browser-based document scanner. It is provided as-is, without warranties of any kind. We may change, suspend, or discontinue any part of the service at any time.</p>
+        <h2>2. Your content</h2>
+        <p>Your documents are processed on your device and never transmitted to us. You retain all rights to everything you scan, export, or create with the tool. We claim no ownership over your content.</p>
+        <h2>3. Acceptable use</h2>
+        <p>You agree not to use Aixuno Scan to process content you have no right to use, or to violate any applicable law. Automated abuse of the site or attempts to disrupt its availability are prohibited.</p>
+        <h2>4. Limitation of liability</h2>
+        <p>To the maximum extent permitted by law, Aixuno is not liable for any damages, data loss, or losses arising from the use or inability to use this service. Always keep your own backups of important documents.</p>
+        <h2>5. Changes</h2>
+        <p>We may update these terms from time to time. Continued use of the service after changes take effect constitutes acceptance of the revised terms.</p>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <p class="footer-brand">Aixuno <span class="grad">Scan</span></p>
+      <p class="footer-tag" data-i18n="footer_tag">Scan, enhance, and OCR documents — locally in your browser.</p>
+      <div id="footer-sites"></div>
+      <div id="footer-pages"></div>
+      <p class="footer-note" data-i18n="footer_note">100% local processing · no accounts · no uploads</p>
+    </footer>
+    <script type="module">
+      import { applyStaticTexts, setLang, getLang, LANGUAGES } from '/src/app/i18n.js';
+      import { renderSiteNetwork, renderFooterNav } from '/src/app/network.js';
+      renderSiteNetwork('scan');
+      renderFooterNav('scan');
+      applyStaticTexts();
+      const host = document.getElementById('lang-switch');
+      function render() {
+        host.innerHTML = '';
+        for (const lang of LANGUAGES) {
+          const btn = document.createElement('button');
+          btn.type = 'button';
+          btn.className = 'lang-btn' + (getLang() === lang.id ? ' active' : '');
+          btn.textContent = lang.label;
+          btn.addEventListener('click', () => setLang(lang.id));
+          host.appendChild(btn);
+        }
+      }
+      render();
+      window.addEventListener('langchange', render);
+    </script>
+  </body>
+</html>

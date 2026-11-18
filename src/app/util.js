@@ -10,6 +10,10 @@ export function showBusy(text = 'Processing…') {
   busyEl.hidden = false;
 }
 
+export function updateBusy(text) {
+  busyText.textContent = text;
+}
+
 export function hideBusy() {
   busyDepth = Math.max(0, busyDepth - 1);
   if (busyDepth === 0) busyEl.hidden = true;
