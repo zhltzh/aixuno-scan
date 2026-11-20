@@ -1,0 +1,497 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Aixuno Scan — 免费在线文档扫描、OCR 与 PDF 工具（本地处理）</title>
+    <meta
+      name="description"
+      content="手机拍照秒变专业扫描件：自动切边、透视矫正、增强滤镜与本地 OCR，一键导出 PDF 或图片。100% 本地处理，文件永不上传。"
+    />
+    <meta name="theme-color" content="#070b16" />
+    <link rel="canonical" href="https://scan.aixuno.com/zh/" />
+    <link rel="alternate" hreflang="en" href="https://scan.aixuno.com/" />
+    <link rel="alternate" hreflang="zh-CN" href="https://scan.aixuno.com/zh/" />
+    <link rel="alternate" hreflang="x-default" href="https://scan.aixuno.com/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Aixuno Scan" />
+    <meta property="og:title" content="Aixuno Scan — 免费在线文档扫描" />
+    <meta
+      property="og:description"
+      content="手机或浏览器直接扫描文档：自动切边、魔幻滤镜、OCR 与多页 PDF/PNG 导出。文件永不上传。"
+    />
+    <meta property="og:url" content="https://scan.aixuno.com/zh/" />
+    <meta property="og:image" content="https://scan.aixuno.com/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "Aixuno Scan",
+        "applicationCategory": "UtilitiesApplication",
+        "operatingSystem": "Web",
+        "url": "https://scan.aixuno.com/zh/",
+        "description": "免费在线文档扫描：自动切边、增强滤镜、本地 OCR 与多页 PDF/PNG 导出，100% 本地处理。",
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+        "isAccessibleForFree": true
+      }
+    </script>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='5' fill='%232563eb'/%3E%3Cpath fill='%23fff' d='M17 5H7a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2Zm0 12H7l2.5-3 2 2.5 2.5-3 3.5 3.5Zm-6.4-4.8a1.4 1.4 0 1 0 0-2.8 1.4 1.4 0 0 0 0 2.8Z'/%3E%3C/svg%3E" />
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <div id="site-network"></div>
+    <header class="topbar">
+      <div class="brand">
+        <a href="https://aixuno.com/">Aixuno</a>
+        <span class="brand-sep">/</span>
+        <span class="brand-current">Scan</span>
+      </div>
+      <nav class="topnav">
+        <a href="#tool" data-i18n="nav_scan">开始扫描</a>
+        <a href="#how-it-works" data-i18n="nav_how">工作原理</a>
+        <a href="#scenes" data-i18n="nav_scenes">使用场景</a>
+        <a href="#compare" data-i18n="nav_compare">方案对比</a>
+        <a href="#faq" data-i18n="nav_faq">常见问题</a>
+      </nav>
+      <div class="topbar-right">
+        <div class="privacy-badge">
+          <svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true">
+            <path
+              fill="currentColor"
+              d="M12 2 4 5v6c0 5 3.4 9.4 8 11 4.6-1.6 8-6 8-11V5l-8-3Zm0 10.5h6c-.5 3.4-2.8 6.4-6 7.7v-7.7H6.2c.3-1.4.8-2.7 1.5-3.8L12 10.5Z"
+            />
+          </svg>
+          <span data-i18n="badge_privacy">本地处理 · 不上传任何内容</span>
+        </div>
+        <div class="lang-switch" id="lang-switch" role="group" aria-label="Language"></div>
+      </div>
+    </header>
+
+    <main id="app">
+      <section id="view-empty" class="view">
+        <!-- Hero -->
+        <div class="hero-band">
+          <div class="hero-inner">
+            <div>
+              <span class="hero-eyebrow"><span class="dot"></span><span data-i18n="hero_eyebrow">无需安装 · 打开浏览器即用</span></span>
+              <h1>
+                <span data-i18n="hero_title_lead">免费在线文档扫描</span><br />
+                <span class="grad" data-i18n="hero_title_grad">文件永不上传的扫描仪</span>
+              </h1>
+              <p class="sub" data-i18n="hero_sub">
+                手机拍照秒变专业扫描件：自动切边、增强滤镜、文字识别，一键导出 PDF 或图片。全程本地处理，永久免费。
+              </p>
+              <ul class="hero-badges">
+                <li data-i18n="hero_badge_1">不上传</li>
+                <li data-i18n="hero_badge_2">免注册</li>
+                <li data-i18n="hero_badge_3">无水印</li>
+              </ul>
+              <div class="hero-cta">
+                <a class="btn-hero" href="#tool" data-i18n="hero_cta">开始扫描</a>
+                <a class="btn-hero-ghost" href="#how-it-works" data-i18n="hero_cta_learn">了解工作原理</a>
+              </div>
+              <p class="hero-note" data-i18n="hero_note">手机电脑都能用 · 无需安装任何东西</p>
+            </div>
+            <div class="hero-demo" aria-hidden="true">
+              <div class="demo-stage">
+                <div class="demo-shot">
+                  <div class="demo-doc"></div>
+                  <div class="demo-scanline"></div>
+                  <div class="demo-corner tl"></div>
+                  <div class="demo-corner tr"></div>
+                  <div class="demo-corner bl"></div>
+                  <div class="demo-corner br"></div>
+                  <div class="demo-caption">
+                    <svg viewBox="0 0 24 24" width="12" height="12"><path fill="currentColor" d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2Z"/></svg>
+                    <span data-i18n="demo_caption">自动识别边缘</span>
+                  </div>
+                </div>
+                <div class="demo-chips">
+                  <div class="demo-chip"><b>5</b><span data-i18n="demo_chip_filters">种滤镜</span></div>
+                  <div class="demo-chip"><b>2</b><span data-i18n="demo_chip_ocr">种识别语言</span></div>
+                  <div class="demo-chip"><b>100%</b><span data-i18n="demo_chip_local">本地处理</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tool -->
+        <div class="tool-wrap" id="tool">
+          <div class="tool-inner">
+            <div class="tool-card">
+              <div id="dropzone" class="dropzone" tabindex="0" role="button"
+                aria-label="上传图片进行扫描">
+                <input id="file-input" type="file" accept="image/*" multiple hidden />
+                <div class="dz-inner">
+                  <svg viewBox="0 0 24 24" width="44" height="44" aria-hidden="true">
+                    <path
+                      fill="currentColor"
+                      d="M19 5H5a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2Zm0 12H5l4-5 3 4 3-4 4 5Zm-9.5-6a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z"
+                    />
+                  </svg>
+                  <p class="dz-main"><strong data-i18n="dz_main_strong">拖拽图片到此处</strong> <span data-i18n="dz_main_rest">或点击选择文件</span></p>
+                  <p class="dz-hint" data-i18n="dz_hint">JPG · PNG · WebP · 支持多页</p>
+                </div>
+              </div>
+              <button id="btn-camera" class="btn btn-secondary btn-block" data-i18n="btn_camera" style="margin-top: 12px">使用相机拍照</button>
+              <p class="footnote" data-i18n="footnote_privacy">
+                所有图片完全在本机处理，永远不会上传。
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Steps -->
+        <section class="section" id="how-it-works">
+          <span class="kicker" data-i18n="steps_kicker">工作原理</span>
+          <h2 data-i18n="steps_h2">三步完成：照片 → 扫描件</h2>
+          <p class="section-lead" data-i18n="steps_lead">
+            零学习成本——打开页面，放入照片，下载结果。
+          </p>
+          <div class="steps">
+            <div class="step reveal">
+              <span class="step-num">1</span>
+              <h3 data-i18n="step1_title">添加照片</h3>
+              <p data-i18n="step1_desc">拖拽图片、浏览文件或直接拍照，一次可处理多页。</p>
+            </div>
+            <div class="step reveal">
+              <span class="step-num">2</span>
+              <h3 data-i18n="step2_title">调整与增强</h3>
+              <p data-i18n="step2_desc">自动识别纸张边缘，微调四角后选择"魔幻彩色"或"黑白"等滤镜，获得接近扫描仪的效果。</p>
+            </div>
+            <div class="step reveal">
+              <span class="step-num">3</span>
+              <h3 data-i18n="step3_title">导出或文字识别</h3>
+              <p data-i18n="step3_desc">下载整洁的多页 PDF，把页面存成 PNG 或 ZIP，或在本地进行 OCR 文字识别导出文本。</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Scenes -->
+        <section class="section" id="scenes">
+          <span class="kicker" data-i18n="scenes_kicker">使用场景</span>
+          <h2 data-i18n="scenes_h2">今天想扫描什么？</h2>
+          <p class="section-lead" data-i18n="scenes_lead">
+            从办公文件到课堂笔记——只要能拍下来，就能扫描。
+          </p>
+          <div class="scenes">
+            <div class="scene reveal">
+              <div class="scene-icon">🪪</div>
+              <div>
+                <h3 data-i18n="scene1_title">证件与证书</h3>
+                <p data-i18n="scene1_desc">护照、毕业证、驾照——只留在你的设备里，从不进云。</p>
+              </div>
+            </div>
+            <div class="scene reveal">
+              <div class="scene-icon">📄</div>
+              <div>
+                <h3 data-i18n="scene2_title">合同与表格</h3>
+                <p data-i18n="scene2_desc">签字、扫描、回传邮件，不必再跑一趟打印店。</p>
+              </div>
+            </div>
+            <div class="scene reveal">
+              <div class="scene-icon">📝</div>
+              <div>
+                <h3 data-i18n="scene3_title">课堂笔记</h3>
+                <p data-i18n="scene3_desc">"黑白"滤镜让手写页更清晰，再用 OCR 一键变文本。</p>
+              </div>
+            </div>
+            <div class="scene reveal">
+              <div class="scene-icon">🧾</div>
+              <div>
+                <h3 data-i18n="scene4_title">发票与收据</h3>
+                <p data-i18n="scene4_desc">随手拍下报销凭据，导出多页 PDF 归档记账。</p>
+              </div>
+            </div>
+            <div class="scene reveal">
+              <div class="scene-icon">🧑‍🏫</div>
+              <div>
+                <h3 data-i18n="scene5_title">白板会议</h3>
+                <p data-i18n="scene5_desc">趁擦板前拍下会议要点，透视自动矫正、一目了然。</p>
+              </div>
+            </div>
+            <div class="scene reveal">
+              <div class="scene-icon">📚</div>
+              <div>
+                <h3 data-i18n="scene6_title">书籍与书页</h3>
+                <p data-i18n="scene6_desc">数字化一段菜谱或一段文字，A4 模式让每页整齐统一。</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Features -->
+        <section class="section" id="features">
+          <span class="kicker" data-i18n="features_kicker">功能特性</span>
+          <h2 data-i18n="features_h2">扫描应用能做的，这里都有——而且不上传</h2>
+          <div class="features">
+            <div class="feature reveal">
+              <div class="feature-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path fill="currentColor" d="M3 5h18v2H3V5Zm0 6h18v2H3v-2Zm0 6h12v2H3v-2Z"/></svg>
+              </div>
+              <h3 data-i18n="feat1_title">自动边缘识别</h3>
+              <p data-i18n="feat1_desc">即使拍摄角度倾斜、桌面杂乱或光线不均，也能自动找到纸张边缘。</p>
+            </div>
+            <div class="feature reveal">
+              <div class="feature-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path fill="currentColor" d="M6 2h9l5 5v15H6V2Zm8 1.5V8h4.5L14 3.5ZM8 12h8v1.6H8V12Zm0 3.5h8V17H8v-1.5Z"/></svg>
+              </div>
+              <h3 data-i18n="feat2_title">透视矫正</h3>
+              <p data-i18n="feat2_desc">倾斜照片被拉平为正视图，可选自动比例或锁定 A4。</p>
+            </div>
+            <div class="feature reveal">
+              <div class="feature-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 3a9 9 0 1 0 9 9h-2a7 7 0 1 1-7-7V3Zm1 4v5l4 2-.8 1.6L11 12.5V7h2Z"/></svg>
+              </div>
+              <h3 data-i18n="feat3_title">5 种增强滤镜</h3>
+              <p data-i18n="feat3_desc">"魔幻彩色"去除阴影，"黑白"模式让字迹最清晰，另有灰度和增亮可选。</p>
+            </div>
+            <div class="feature reveal">
+              <div class="feature-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path fill="currentColor" d="M4 5h16v3H4V5Zm0 5.5h16v3H4v-3ZM4 16h10v3H4v-3Zm12 0 5 1.5-5 1.5v-3Z"/></svg>
+              </div>
+              <h3 data-i18n="feat4_title">本地文字识别</h3>
+              <p data-i18n="feat4_desc">在本地识别中英文文字，导出 .txt / .md，可直接用于笔记或编辑器。</p>
+            </div>
+            <div class="feature reveal">
+              <div class="feature-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path fill="currentColor" d="M4 4h6v2H6v12h4v2H4V4Zm10 0h6v16h-6v-2h4V6h-4V4Z"/></svg>
+              </div>
+              <h3 data-i18n="feat5_title">PDF · PNG · ZIP 导出</h3>
+              <p data-i18n="feat5_desc">一份整洁的多页 PDF、单页 PNG 或整包 ZIP——免费、无水印。</p>
+            </div>
+            <div class="feature reveal">
+              <div class="feature-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 2 4 5v6c0 5 3.4 9.4 8 11 4.6-1.6 8-6 8-11V5l-8-3Zm0 10.5h6c-.5 3.4-2.8 6.4-6 7.7v-7.7H6.2c.3-1.4.8-2.7 1.5-3.8L12 10.5Z"/></svg>
+              </div>
+              <h3 data-i18n="feat6_title">100% 本地处理</h3>
+              <p data-i18n="feat6_desc">识别、滤镜、OCR 与 PDF 生成全部在浏览器中完成，合同与证件永不离开你的设备。</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Stats -->
+        <div class="stats-band">
+          <div class="stats reveal">
+            <div class="stat"><b>100%</b><span data-i18n="stat1_d">本地处理</span></div>
+            <div class="stat"><b>0</b><span data-i18n="stat2_d">字节上传</span></div>
+            <div class="stat"><b>5</b><span data-i18n="stat3_d">种增强滤镜</span></div>
+            <div class="stat"><b>∞</b><span data-i18n="stat4_d">次扫描不限量</span></div>
+          </div>
+        </div>
+
+        <!-- Compare -->
+        <section class="section" id="compare">
+          <span class="kicker" data-i18n="compare_kicker">方案对比</span>
+          <h2 data-i18n="compare_h2">为什么不用云端扫描 App？</h2>
+          <p class="section-lead" data-i18n="compare_lead">
+            主流扫描应用会把你的文件上传到它们的服务器。区别一目了然：
+          </p>
+          <div class="compare-scroll">
+            <table class="compare">
+              <thead>
+                <tr>
+                  <th data-i18n="compare_col_feature">能力</th>
+                  <th class="col-us" data-i18n="compare_col_us">Aixuno Scan</th>
+                  <th data-i18n="compare_col_cloud">云端扫描应用</th>
+                  <th data-i18n="compare_col_hw">办公扫描仪</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td data-i18n="compare_r1">文件离开设备</td>
+                  <td class="col-us yes">✕ <span data-i18n="compare_never">绝不</span></td>
+                  <td class="no" data-i18n="compare_r1_cloud">上传到云端</td>
+                  <td class="no">—</td>
+                </tr>
+                <tr>
+                  <td data-i18n="compare_r2">免费无水印</td>
+                  <td class="col-us yes" data-i18n="compare_yes">是</td>
+                  <td class="no" data-i18n="compare_r2_cloud">订阅付费 / 有水印</td>
+                  <td class="no" data-i18n="compare_r2_hw">硬件 + 软件成本</td>
+                </tr>
+                <tr>
+                  <td data-i18n="compare_r3">OCR 在本地运行</td>
+                  <td class="col-us yes" data-i18n="compare_yes2">是，就在你的设备上</td>
+                  <td class="no" data-i18n="compare_r3_cloud">服务器端处理</td>
+                  <td class="no" data-i18n="compare_r3_hw">通常没有</td>
+                </tr>
+                <tr>
+                  <td data-i18n="compare_r4">PDF / PNG / ZIP 导出</td>
+                  <td class="col-us yes" data-i18n="compare_yes3">全部支持</td>
+                  <td class="no" data-i18n="compare_r4_cloud">仅 PDF，高级要付费</td>
+                  <td class="no" data-i18n="compare_r4_hw">需厂商软件</td>
+                </tr>
+                <tr>
+                  <td data-i18n="compare_r5">任意浏览器可用</td>
+                  <td class="col-us yes" data-i18n="compare_yes4">手机与电脑</td>
+                  <td class="no" data-i18n="compare_r5_cloud">需要安装应用</td>
+                  <td class="no" data-i18n="compare_r5_hw">需要装驱动</td>
+                </tr>
+                <tr>
+                  <td data-i18n="compare_r6">敏感文件安全性</td>
+                  <td class="col-us yes" data-i18n="compare_ideal">非常适合</td>
+                  <td class="no" data-i18n="compare_r6_cloud">建议先读隐私政策</td>
+                  <td class="yes" data-i18n="compare_ok">尚可</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- Privacy -->
+        <section class="section" id="privacy">
+          <div class="privacy-section reveal">
+            <h2 data-i18n="privacy_h2">文档始终留在你的设备上</h2>
+            <p class="privacy-sub" data-i18n="privacy_sub">
+              与云扫描工具不同，本工具没有任何服务器可发送数据。从边缘识别到 OCR 的每一步，都在你的浏览器标签页中本地完成。
+            </p>
+            <ul class="privacy-list">
+              <li data-i18n="privacy_li_1">无账号、免注册、不追踪你的文档</li>
+              <li data-i18n="privacy_li_2">首次加载后可离线使用（OCR 模型由浏览器缓存）</li>
+              <li data-i18n="privacy_li_3">适合处理合同、证件、医疗记录等敏感材料</li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- FAQ -->
+        <section class="section" id="faq">
+          <span class="kicker" data-i18n="faq_kicker">常见问题</span>
+          <h2 class="center" data-i18n="faq_h2">常见问题</h2>
+          <div class="faq-list">
+            <details class="faq-item">
+              <summary data-i18n="faq1_q">Aixuno Scan 真的免费吗？</summary>
+              <p data-i18n="faq1_a">是的。包括 OCR、PDF 与图片导出在内的全部功能都免费，无水印、无需注册。</p>
+            </details>
+            <details class="faq-item">
+              <summary data-i18n="faq2_q">我的文档会被上传到服务器吗？</summary>
+              <p data-i18n="faq2_a">不会。边缘识别、增强、OCR 与 PDF 生成完全在浏览器中运行，页面加载完成后甚至可以断网使用。</p>
+            </details>
+            <details class="faq-item">
+              <summary data-i18n="faq3_q">支持哪些图片格式？</summary>
+              <p data-i18n="faq3_a">支持来自任意来源的 JPG、PNG、WebP——手机照片、截图或文件，也可以直接用设备相机拍摄。</p>
+            </details>
+            <details class="faq-item">
+              <summary data-i18n="faq4_q">可以导出哪些格式？</summary>
+              <p data-i18n="faq4_a">多页 PDF、单页 PNG 图片、整包 ZIP，以及 OCR 文本（.txt / .md）。所有导出均无水印。</p>
+            </details>
+            <details class="faq-item">
+              <summary data-i18n="faq5_q">OCR 支持识别哪些语言？</summary>
+              <p data-i18n="faq5_a">目前支持英文与简体中文（中英混合），后续将增加更多语言。识别在你的设备上完成。</p>
+            </details>
+            <details class="faq-item">
+              <summary data-i18n="faq6_q">手机上能用吗？</summary>
+              <p data-i18n="faq6_a">可以。页面完全响应式，移动浏览器还支持相机拍摄（需要 HTTPS，托管站点默认提供）。</p>
+            </details>
+            <details class="faq-item">
+              <summary data-i18n="faq7_q">扫描件可以商用吗？</summary>
+              <p data-i18n="faq7_a">可以。你扫描的是你自己的文件，导出后想怎么用就怎么用，我们不对任何内容主张权利。</p>
+            </details>
+            <details class="faq-item">
+              <summary data-i18n="faq8_q">和扫描全能王（CamScanner）有什么区别？</summary>
+              <p data-i18n="faq8_a">无云端上传、无账号、无水印、无订阅。代价是没有高级 AI 修饰（去摩尔纹、手指遮挡修复），但核心扫描与 OCR 功能齐全。</p>
+            </details>
+          </div>
+        </section>
+
+        <!-- CTA -->
+        <div class="cta-band">
+          <div class="cta-card reveal">
+            <h2 data-i18n="cta_h2">准备好扫描第一份文件了吗？</h2>
+            <p data-i18n="cta_sub">免费 · 本地 · 免注册，20 秒就能完成。</p>
+            <a class="btn-hero" href="#tool" data-i18n="cta_btn">立即开始扫描</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="view-pages" class="view" hidden>
+        <div class="tool-head">
+          <h1 class="view-title" data-i18n="view_title">我的扫描件</h1>
+          <div class="ocr-bar" style="margin-top: 12px">
+            <label for="ocr-lang" data-i18n="ocr_label">OCR 识别语言</label>
+            <select id="ocr-lang"></select>
+          </div>
+        </div>
+        <div class="tool-inner" style="padding-top: 20px">
+          <div id="page-grid" class="page-grid"></div>
+          <div class="actions-row" style="margin-top: 20px">
+            <button id="btn-add-more" class="btn btn-secondary" data-i18n="btn_add_pages">添加页面</button>
+            <button id="btn-clear" class="btn btn-danger" data-i18n="btn_clear">清空</button>
+            <button id="btn-export-images" class="btn btn-secondary" data-i18n="btn_export_images">下载图片</button>
+            <button id="btn-export" class="btn btn-primary" data-i18n="btn_export">下载 PDF</button>
+          </div>
+          <p id="page-count" class="footnote"></p>
+        </div>
+      </section>
+
+      <section id="view-ocr" class="ocr-modal" hidden>
+        <div class="ocr-panel">
+          <div class="ocr-head">
+            <span class="ocr-title" data-i18n="ocr_title">识别结果</span>
+            <span id="ocr-confidence" class="ocr-conf"></span>
+            <button id="btn-ocr-close" class="icon-btn" aria-label="关闭">✕</button>
+          </div>
+          <textarea id="ocr-text" spellcheck="false"></textarea>
+          <div class="ocr-actions">
+            <button id="btn-ocr-copy" class="btn btn-secondary" data-i18n="btn_copy">复制</button>
+            <button id="btn-ocr-txt" class="btn btn-secondary" data-i18n="btn_txt">下载 .txt</button>
+            <button id="btn-ocr-md" class="btn btn-primary" data-i18n="btn_md">下载 .md</button>
+          </div>
+        </div>
+      </section>
+
+      <section id="view-editor" class="editor" hidden>
+        <div class="editor-top">
+          <button id="btn-editor-cancel" class="btn btn-ghost" data-i18n="btn_cancel">取消</button>
+          <span id="editor-title" class="editor-title"></span>
+          <button id="btn-editor-done" class="btn btn-primary" data-i18n="btn_done">完成</button>
+        </div>
+        <div class="editor-canvas-wrap">
+          <canvas id="editor-canvas"></canvas>
+          <div id="editor-status" class="editor-status"></div>
+          <div id="editor-preview-box" class="editor-preview-box">
+            <span class="editor-preview-label" data-i18n="preview_label">预览</span>
+            <img id="editor-preview" alt="扫描预览" hidden />
+          </div>
+        </div>
+        <div class="editor-toolbar">
+          <div id="filter-bar" class="filter-bar"></div>
+          <div class="ratio-bar">
+            <label class="chip"><input type="radio" name="ratio" value="original" checked /><span data-i18n="ratio_auto">自动</span></label>
+            <label class="chip"><input type="radio" name="ratio" value="a4" /><span data-i18n="ratio_a4">A4</span></label>
+          </div>
+        </div>
+      </section>
+
+      <section id="view-camera" class="camera" hidden>
+        <video id="camera-video" autoplay playsinline muted></video>
+        <div class="camera-top">
+          <button id="btn-camera-cancel" class="btn btn-ghost" aria-label="关闭相机">✕</button>
+        </div>
+        <div class="camera-bottom">
+          <button id="btn-shutter" class="shutter" aria-label="拍照"></button>
+        </div>
+      </section>
+
+      <div id="busy" class="busy" hidden>
+        <div class="spinner" role="progressbar" aria-label="处理中"></div>
+        <p id="busy-text">处理中…</p>
+      </div>
+      <div id="toast" class="toast" role="status" hidden></div>
+    </main>
+
+    <footer class="site-footer">
+      <p class="footer-brand">Aixuno <span class="grad">Scan</span></p>
+      <p class="footer-tag" data-i18n="footer_tag">在浏览器本地完成扫描、增强与文字识别。</p>
+      <div id="footer-sites"></div>
+      <div id="footer-pages"></div>
+      <p class="footer-note" data-i18n="footer_note">100% 本地处理 · 无账号 · 无上传</p>
+    </footer>
+
+    <script type="module" src="/src/app/main.js"></script>
+  </body>
+</html>

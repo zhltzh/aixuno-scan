@@ -9,14 +9,16 @@ export const NETWORK_SITES = [
   { id: 'watermark', href: 'https://watermark.aixuno.com/', mark: 'WM', tone: 'cyan', key: 'net_watermark' },
 ];
 
+const PREFIX = typeof location !== 'undefined' && location.pathname.startsWith('/zh/') ? '../' : './';
+
 const PAGE_LINKS = [
-  { href: './about.html', key: 'footer_about' },
-  { href: './contact.html', key: 'footer_contact' },
-  { href: './privacy.html', key: 'nav_privacy' },
-  { href: './terms.html', key: 'footer_terms' },
-  { href: './disclaimer.html', key: 'footer_disclaimer' },
-  { href: './changelog.html', key: 'footer_changelog' },
-  { href: './index.html#faq', key: 'nav_faq' },
+  { href: `${PREFIX}about.html`, key: 'footer_about' },
+  { href: `${PREFIX}contact.html`, key: 'footer_contact' },
+  { href: `${PREFIX}privacy.html`, key: 'nav_privacy' },
+  { href: `${PREFIX}terms.html`, key: 'footer_terms' },
+  { href: `${PREFIX}disclaimer.html`, key: 'footer_disclaimer' },
+  { href: `${PREFIX}changelog.html`, key: 'footer_changelog' },
+  { href: `${PREFIX}index.html#faq`, key: 'nav_faq' },
 ];
 
 export function renderSiteNetwork(currentId) {

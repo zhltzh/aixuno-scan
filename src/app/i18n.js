@@ -452,12 +452,14 @@ const STORAGE_KEY = 'aixuno-scan-lang';
 let current = detectLanguage();
 
 function detectLanguage() {
+  const fromPath = typeof location !== 'undefined' && location.pathname.startsWith('/zh/');
   try {
     const saved = localStorage.getItem(STORAGE_KEY);
     if (saved && STRINGS[saved]) return saved;
   } catch (err) {
     // localStorage unavailable
   }
+  if (fromPath) return 'zh';
   const nav = (navigator.language || 'en').toLowerCase();
   return nav.startsWith('zh') ? 'zh' : 'en';
 }

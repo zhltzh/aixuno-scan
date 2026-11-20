@@ -9,6 +9,7 @@ const pages = [
   'terms',
   'disclaimer',
   'changelog',
+  'zh/index',
 ];
 
 export default defineConfig({
