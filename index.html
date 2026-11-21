@@ -96,52 +96,27 @@
               </div>
               <p class="hero-note" data-i18n="hero_note">Works on phone &amp; desktop · nothing to install</p>
             </div>
-            <div class="hero-demo" aria-hidden="true">
-              <div class="demo-stage">
-                <div class="demo-shot">
-                  <div class="demo-doc"></div>
-                  <div class="demo-scanline"></div>
-                  <div class="demo-corner tl"></div>
-                  <div class="demo-corner tr"></div>
-                  <div class="demo-corner bl"></div>
-                  <div class="demo-corner br"></div>
-                  <div class="demo-caption">
-                    <svg viewBox="0 0 24 24" width="12" height="12"><path fill="currentColor" d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2Z"/></svg>
-                    <span data-i18n="demo_caption">Auto edge detection</span>
+            <div class="hero-tool" id="tool">
+              <div class="tool-card">
+                <div id="dropzone" class="dropzone" tabindex="0" role="button"
+                  aria-label="Upload images to scan">
+                  <input id="file-input" type="file" accept="image/*" multiple hidden />
+                  <div class="dz-inner">
+                    <svg viewBox="0 0 24 24" width="44" height="44" aria-hidden="true">
+                      <path
+                        fill="currentColor"
+                        d="M19 5H5a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2Zm0 12H5l4-5 3 4 3-4 4 5Zm-9.5-6a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z"
+                      />
+                    </svg>
+                    <p class="dz-main"><strong data-i18n="dz_main_strong">Drop images here</strong> <span data-i18n="dz_main_rest">or click to browse</span></p>
+                    <p class="dz-hint" data-i18n="dz_hint">JPG · PNG · WebP · multiple pages supported</p>
                   </div>
                 </div>
-                <div class="demo-chips">
-                  <div class="demo-chip"><b>5</b><span data-i18n="demo_chip_filters">Filters</span></div>
-                  <div class="demo-chip"><b>2</b><span data-i18n="demo_chip_ocr">OCR languages</span></div>
-                  <div class="demo-chip"><b>100%</b><span data-i18n="demo_chip_local">Local</span></div>
-                </div>
+                <button id="btn-camera" class="btn btn-secondary btn-block btn-camera" data-i18n="btn_camera">Use camera</button>
+                <p class="footnote" data-i18n="footnote_privacy">
+                  Your images are processed entirely on this device. Nothing is uploaded, ever.
+                </p>
               </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Tool -->
-        <div class="tool-wrap" id="tool">
-          <div class="tool-inner">
-            <div class="tool-card">
-              <div id="dropzone" class="dropzone" tabindex="0" role="button"
-                aria-label="Upload images to scan">
-                <input id="file-input" type="file" accept="image/*" multiple hidden />
-                <div class="dz-inner">
-                  <svg viewBox="0 0 24 24" width="44" height="44" aria-hidden="true">
-                    <path
-                      fill="currentColor"
-                      d="M19 5H5a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2Zm0 12H5l4-5 3 4 3-4 4 5Zm-9.5-6a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z"
-                    />
-                  </svg>
-                  <p class="dz-main"><strong data-i18n="dz_main_strong">Drop images here</strong> <span data-i18n="dz_main_rest">or click to browse</span></p>
-                  <p class="dz-hint" data-i18n="dz_hint">JPG · PNG · WebP · multiple pages supported</p>
-                </div>
-              </div>
-              <button id="btn-camera" class="btn btn-secondary btn-block" data-i18n="btn_camera" style="margin-top: 12px">Use camera</button>
-              <p class="footnote" data-i18n="footnote_privacy">
-                Your images are processed entirely on this device. Nothing is uploaded, ever.
-              </p>
             </div>
           </div>
         </div>
@@ -353,10 +328,29 @@
               from edge detection to OCR — runs locally in your browser tab.
             </p>
             <ul class="privacy-list">
-              <li data-i18n="privacy_li_1">No account, no sign-up, no tracking of your documents</li>
-              <li data-i18n="privacy_li_2">Works offline after the first load (OCR models are cached by your browser)</li>
-              <li data-i18n="privacy_li_3">Safe for contracts, IDs, medical records, and other sensitive paperwork</li>
+              <li data-i18n="privacy_li_1">No accounts, no sign-ups, no tracking of your documents</li>
+              <li data-i18n="privacy_li_2">Works offline after the first load (OCR models cached by your browser)</li>
+              <li data-i18n="privacy_li_3">Suitable for contracts, IDs, medical records and other sensitive material</li>
             </ul>
+          </div>
+        </section>
+
+        <!-- Ecosystem -->
+        <section class="section" id="ecosystem">
+          <span class="kicker" data-i18n="eco_eyebrow">Aixuno ecosystem</span>
+          <h2 data-i18n="eco_title">Eight free tools, one ecosystem</h2>
+          <p class="section-lead" data-i18n="eco_lead">
+            Scanning is just one of them — every tool is free, account-free, and processes locally whenever possible.
+          </p>
+          <div class="eco-grid">
+            <a class="eco-card" href="https://aixuno.com/"><span class="site-net__mark site-net__mark--amber">MD</span><strong data-i18n="eco_site_md">Markdown</strong><span class="eco-desc" data-i18n="eco_desc_md">Turn AI answers into Word, PDF and clean Markdown.</span><em class="eco-go" aria-hidden="true">↗</em></a>
+            <a class="eco-card" href="https://image.aixuno.com/"><span class="site-net__mark site-net__mark--fuchsia">IMG</span><strong data-i18n="eco_site_img">Pixkit Images</strong><span class="eco-desc" data-i18n="eco_desc_img">Convert, resize and optimize images in your browser.</span><em class="eco-go" aria-hidden="true">↗</em></a>
+            <a class="eco-card" href="https://compress.aixuno.com/"><span class="site-net__mark site-net__mark--sky">ZIP</span><strong data-i18n="eco_site_zip">File Compress</strong><span class="eco-desc" data-i18n="eco_desc_zip">Shrink images and documents for faster sharing.</span><em class="eco-go" aria-hidden="true">↗</em></a>
+            <a class="eco-card" href="https://pdf.aixuno.com/"><span class="site-net__mark site-net__mark--rose">PDF</span><strong data-i18n="eco_site_pdf">PDF Tools</strong><span class="eco-desc" data-i18n="eco_desc_pdf">Focused, browser-based PDF utilities.</span><em class="eco-go" aria-hidden="true">↗</em></a>
+            <a class="eco-card" href="https://bg.aixuno.com/"><span class="site-net__mark site-net__mark--violet">BG</span><strong data-i18n="eco_site_bg">AI Cutout</strong><span class="eco-desc" data-i18n="eco_desc_bg">Remove image backgrounds with AI.</span><em class="eco-go" aria-hidden="true">↗</em></a>
+            <span class="eco-card is-current" aria-current="page"><span class="site-net__mark site-net__mark--blue">DOC</span><strong data-i18n="eco_site_scan">Document Scan</strong><span class="eco-desc" data-i18n="eco_desc_scan">Phone photos into crisp scanned PDFs with local OCR.</span></span>
+            <a class="eco-card" href="https://restore.aixuno.com/"><span class="site-net__mark site-net__mark--indigo">FIX</span><strong data-i18n="eco_site_restore">Photo Restore</strong><span class="eco-desc" data-i18n="eco_desc_restore">Restore old photos free — local fixes plus AI deep restoration.</span><em class="eco-go" aria-hidden="true">↗</em></a>
+            <a class="eco-card" href="https://watermark.aixuno.com/"><span class="site-net__mark site-net__mark--cyan">WM</span><strong data-i18n="eco_site_watermark">Watermark Remover</strong><span class="eco-desc" data-i18n="eco_desc_watermark">Remove watermarks from videos you own.</span><em class="eco-go" aria-hidden="true">↗</em></a>
           </div>
         </section>
 

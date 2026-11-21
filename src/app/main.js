@@ -83,6 +83,18 @@ renderLangSwitch();
 
 applyStaticTexts();
 
+// 首屏 CTA：直接聚焦上传区，避免用户再滚动寻找操作入口
+document.querySelectorAll('a[href="#tool"]').forEach((cta) => {
+  cta.addEventListener('click', (event) => {
+    const dropzone = document.getElementById('dropzone');
+    if (!dropzone) return;
+    event.preventDefault();
+    dropzone.focus();
+    dropzone.classList.add('dropzone--pulse');
+    setTimeout(() => dropzone.classList.remove('dropzone--pulse'), 1200);
+  });
+});
+
 window.addEventListener('langchange', () => {
   refreshOcrLangOptions();
   renderLangSwitch();
