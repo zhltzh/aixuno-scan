@@ -1,0 +1,47 @@
+# Aixuno Scan — 免费在线文档扫描
+
+> 用手机照片或浏览器生成清晰扫描件：自动边缘检测、透视校正、黑白/灰度增强，输出 PDF 或图片。文字识别（OCR）与处理全部在浏览器本地完成，文件不上传服务器。
+
+> 中文版：https://scan.aixuno.com/zh/
+
+## 站点
+- 名称：Aixuno Scan（文档扫描）
+- 首页：https://scan.aixuno.com/
+- 中文首页：https://scan.aixuno.com/zh/
+- 用途：把手机拍的文档照片转成规整的扫描件 PDF
+
+## 核心能力
+- 自动边缘检测与透视校正
+- 多页扫描合并为一个 PDF
+- 黑白 / 灰度 / 增强滤镜，去除阴影
+- 相机拍摄与图片上传两种入口
+- OCR 文字识别（浏览器本地）
+- 全部处理在浏览器本地完成，文件不上传服务器
+
+## 关键信息
+- 免费使用，无需注册或登录
+- 处理完全在浏览器本地完成，照片不上传任何服务器
+- 输出格式：PDF、PNG、JPG
+- 适合合同、证件、发票、书页、笔记等文档扫描
+
+## 页面
+- 首页：https://scan.aixuno.com/
+- 中文首页：https://scan.aixuno.com/zh/
+- 关于：https://scan.aixuno.com/about.html
+- 隐私说明：https://scan.aixuno.com/privacy.html
+- 服务条款：https://scan.aixuno.com/terms.html
+- 联系与反馈：https://scan.aixuno.com/contact.html
+- 免责声明：https://scan.aixuno.com/disclaimer.html
+- 更新日志：https://scan.aixuno.com/changelog.html
+
+## Aixuno 工具生态
+- Markdown 转换：https://aixuno.com/
+- 图片工具：https://image.aixuno.com/
+- 文件压缩：https://compress.aixuno.com/
+- PDF 工具：https://pdf.aixuno.com/
+- AI 抠图：https://bg.aixuno.com/
+- 老照片修复：https://restore.aixuno.com/
+- 视频去水印：https://watermark.aixuno.com/
+
+## 站点地图
+- https://scan.aixuno.com/sitemap.xml

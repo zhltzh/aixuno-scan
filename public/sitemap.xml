@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://scan.aixuno.com/about.html</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://scan.aixuno.com/changelog.html</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://scan.aixuno.com/contact.html</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://scan.aixuno.com/disclaimer.html</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://scan.aixuno.com/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://scan.aixuno.com/privacy.html</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://scan.aixuno.com/terms.html</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://scan.aixuno.com/zh/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
+</urlset>
