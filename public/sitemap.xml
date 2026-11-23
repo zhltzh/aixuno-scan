@@ -2,27 +2,39 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://scan.aixuno.com/about.html</loc>
-    <lastmod>2026-11-22</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://scan.aixuno.com/zh/about.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://scan.aixuno.com/about.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://scan.aixuno.com/about.html"/>
   </url>
   <url>
     <loc>https://scan.aixuno.com/changelog.html</loc>
-    <lastmod>2026-11-22</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://scan.aixuno.com/zh/changelog.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://scan.aixuno.com/changelog.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://scan.aixuno.com/changelog.html"/>
   </url>
   <url>
     <loc>https://scan.aixuno.com/contact.html</loc>
-    <lastmod>2026-11-22</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://scan.aixuno.com/zh/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://scan.aixuno.com/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://scan.aixuno.com/contact.html"/>
   </url>
   <url>
     <loc>https://scan.aixuno.com/disclaimer.html</loc>
-    <lastmod>2026-11-22</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://scan.aixuno.com/zh/disclaimer.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://scan.aixuno.com/disclaimer.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://scan.aixuno.com/disclaimer.html"/>
   </url>
   <url>
     <loc>https://scan.aixuno.com/</loc>
@@ -35,15 +47,21 @@
   </url>
   <url>
     <loc>https://scan.aixuno.com/privacy.html</loc>
-    <lastmod>2026-11-22</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://scan.aixuno.com/zh/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://scan.aixuno.com/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://scan.aixuno.com/privacy.html"/>
   </url>
   <url>
     <loc>https://scan.aixuno.com/terms.html</loc>
-    <lastmod>2026-11-22</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://scan.aixuno.com/zh/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://scan.aixuno.com/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://scan.aixuno.com/terms.html"/>
   </url>
   <url>
     <loc>https://scan.aixuno.com/zh/</loc>
@@ -53,5 +71,59 @@
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://scan.aixuno.com/zh/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://scan.aixuno.com/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://scan.aixuno.com/"/>
+  </url>
+  <url>
+    <loc>https://scan.aixuno.com/zh/about.html</loc>
+    <lastmod>2026-11-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://scan.aixuno.com/zh/about.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://scan.aixuno.com/about.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://scan.aixuno.com/about.html"/>
+  </url>
+  <url>
+    <loc>https://scan.aixuno.com/zh/changelog.html</loc>
+    <lastmod>2026-11-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://scan.aixuno.com/zh/changelog.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://scan.aixuno.com/changelog.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://scan.aixuno.com/changelog.html"/>
+  </url>
+  <url>
+    <loc>https://scan.aixuno.com/zh/contact.html</loc>
+    <lastmod>2026-11-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://scan.aixuno.com/zh/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://scan.aixuno.com/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://scan.aixuno.com/contact.html"/>
+  </url>
+  <url>
+    <loc>https://scan.aixuno.com/zh/disclaimer.html</loc>
+    <lastmod>2026-11-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://scan.aixuno.com/zh/disclaimer.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://scan.aixuno.com/disclaimer.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://scan.aixuno.com/disclaimer.html"/>
+  </url>
+  <url>
+    <loc>https://scan.aixuno.com/zh/privacy.html</loc>
+    <lastmod>2026-11-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://scan.aixuno.com/zh/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://scan.aixuno.com/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://scan.aixuno.com/privacy.html"/>
+  </url>
+  <url>
+    <loc>https://scan.aixuno.com/zh/terms.html</loc>
+    <lastmod>2026-11-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://scan.aixuno.com/zh/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://scan.aixuno.com/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://scan.aixuno.com/terms.html"/>
   </url>
 </urlset>

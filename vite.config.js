@@ -10,6 +10,12 @@ const pages = [
   'disclaimer',
   'changelog',
   'zh/index',
+  'zh/about',
+  'zh/contact',
+  'zh/privacy',
+  'zh/terms',
+  'zh/disclaimer',
+  'zh/changelog',
 ];
 
 export default defineConfig({

@@ -9,7 +9,7 @@ export const NETWORK_SITES = [
   { id: 'watermark', href: 'https://watermark.aixuno.com/', mark: 'WM', tone: 'cyan', key: 'net_watermark' },
 ];
 
-const PREFIX = typeof location !== 'undefined' && location.pathname.startsWith('/zh/') ? '../' : './';
+const PREFIX = './';
 
 const PAGE_LINKS = [
   { href: `${PREFIX}about.html`, key: 'footer_about' },

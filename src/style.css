@@ -257,6 +257,10 @@ body {
   border-left: 1px solid var(--line);
 }
 
+.lang-switch a {
+  text-decoration: none;
+}
+
 .lang-btn.active {
   background: var(--grad);
   color: #fff;

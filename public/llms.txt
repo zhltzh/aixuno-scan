@@ -34,6 +34,14 @@
 - 免责声明：https://scan.aixuno.com/disclaimer.html
 - 更新日志：https://scan.aixuno.com/changelog.html
 
+## 中文页面
+- 关于我们：https://scan.aixuno.com/zh/about.html
+- 联系我们：https://scan.aixuno.com/zh/contact.html
+- 隐私政策：https://scan.aixuno.com/zh/privacy.html
+- 服务条款：https://scan.aixuno.com/zh/terms.html
+- 免责声明：https://scan.aixuno.com/zh/disclaimer.html
+- 更新日志：https://scan.aixuno.com/zh/changelog.html
+
 ## Aixuno 工具生态
 - Markdown 转换：https://aixuno.com/
 - 图片工具：https://image.aixuno.com/
