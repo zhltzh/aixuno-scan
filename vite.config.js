@@ -9,6 +9,12 @@ const pages = [
   'terms',
   'disclaimer',
   'changelog',
+  'guides/index',
+  'guides/paper-to-pdf-scan',
+  'guides/ocr-editable-text',
+  'guides/scan-id-card',
+  'guides/remove-shadow-clear',
+  'guides/multi-page-pdf',
   'zh/index',
   'zh/about',
   'zh/contact',
@@ -16,6 +22,12 @@ const pages = [
   'zh/terms',
   'zh/disclaimer',
   'zh/changelog',
+  'zh/guides/index',
+  'zh/guides/paper-to-pdf-scan',
+  'zh/guides/ocr-editable-text',
+  'zh/guides/scan-id-card',
+  'zh/guides/remove-shadow-clear',
+  'zh/guides/multi-page-pdf',
 ];
 
 export default defineConfig({

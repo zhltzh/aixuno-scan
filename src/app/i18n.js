@@ -6,6 +6,7 @@ const STRINGS = {
     nav_compare: 'Compare',
     nav_privacy: 'Privacy',
     nav_faq: 'FAQ',
+    nav_guides: 'Guides',
     badge_privacy: 'Local processing · nothing is uploaded',
     lang_label: 'Language',
 
@@ -242,6 +243,7 @@ const STRINGS = {
     nav_compare: '方案对比',
     nav_privacy: '隐私安全',
     nav_faq: '常见问题',
+    nav_guides: '教程',
     badge_privacy: '本地处理 · 不上传任何内容',
     lang_label: '语言',
 

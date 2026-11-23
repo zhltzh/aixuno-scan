@@ -126,4 +126,112 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://scan.aixuno.com/terms.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://scan.aixuno.com/terms.html"/>
   </url>
+  <url>
+    <loc>https://scan.aixuno.com/guides/index.html</loc>
+    <lastmod>2026-11-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://scan.aixuno.com/zh/guides/index.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://scan.aixuno.com/guides/index.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://scan.aixuno.com/guides/index.html"/>
+  </url>
+  <url>
+    <loc>https://scan.aixuno.com/zh/guides/index.html</loc>
+    <lastmod>2026-11-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://scan.aixuno.com/zh/guides/index.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://scan.aixuno.com/guides/index.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://scan.aixuno.com/guides/index.html"/>
+  </url>
+  <url>
+    <loc>https://scan.aixuno.com/guides/paper-to-pdf-scan.html</loc>
+    <lastmod>2026-11-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://scan.aixuno.com/zh/guides/paper-to-pdf-scan.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://scan.aixuno.com/guides/paper-to-pdf-scan.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://scan.aixuno.com/guides/paper-to-pdf-scan.html"/>
+  </url>
+  <url>
+    <loc>https://scan.aixuno.com/zh/guides/paper-to-pdf-scan.html</loc>
+    <lastmod>2026-11-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://scan.aixuno.com/zh/guides/paper-to-pdf-scan.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://scan.aixuno.com/guides/paper-to-pdf-scan.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://scan.aixuno.com/guides/paper-to-pdf-scan.html"/>
+  </url>
+  <url>
+    <loc>https://scan.aixuno.com/guides/ocr-editable-text.html</loc>
+    <lastmod>2026-11-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://scan.aixuno.com/zh/guides/ocr-editable-text.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://scan.aixuno.com/guides/ocr-editable-text.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://scan.aixuno.com/guides/ocr-editable-text.html"/>
+  </url>
+  <url>
+    <loc>https://scan.aixuno.com/zh/guides/ocr-editable-text.html</loc>
+    <lastmod>2026-11-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://scan.aixuno.com/zh/guides/ocr-editable-text.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://scan.aixuno.com/guides/ocr-editable-text.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://scan.aixuno.com/guides/ocr-editable-text.html"/>
+  </url>
+  <url>
+    <loc>https://scan.aixuno.com/guides/scan-id-card.html</loc>
+    <lastmod>2026-11-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://scan.aixuno.com/zh/guides/scan-id-card.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://scan.aixuno.com/guides/scan-id-card.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://scan.aixuno.com/guides/scan-id-card.html"/>
+  </url>
+  <url>
+    <loc>https://scan.aixuno.com/zh/guides/scan-id-card.html</loc>
+    <lastmod>2026-11-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://scan.aixuno.com/zh/guides/scan-id-card.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://scan.aixuno.com/guides/scan-id-card.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://scan.aixuno.com/guides/scan-id-card.html"/>
+  </url>
+  <url>
+    <loc>https://scan.aixuno.com/guides/remove-shadow-clear.html</loc>
+    <lastmod>2026-11-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://scan.aixuno.com/zh/guides/remove-shadow-clear.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://scan.aixuno.com/guides/remove-shadow-clear.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://scan.aixuno.com/guides/remove-shadow-clear.html"/>
+  </url>
+  <url>
+    <loc>https://scan.aixuno.com/zh/guides/remove-shadow-clear.html</loc>
+    <lastmod>2026-11-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://scan.aixuno.com/zh/guides/remove-shadow-clear.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://scan.aixuno.com/guides/remove-shadow-clear.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://scan.aixuno.com/guides/remove-shadow-clear.html"/>
+  </url>
+  <url>
+    <loc>https://scan.aixuno.com/guides/multi-page-pdf.html</loc>
+    <lastmod>2026-11-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://scan.aixuno.com/zh/guides/multi-page-pdf.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://scan.aixuno.com/guides/multi-page-pdf.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://scan.aixuno.com/guides/multi-page-pdf.html"/>
+  </url>
+  <url>
+    <loc>https://scan.aixuno.com/zh/guides/multi-page-pdf.html</loc>
+    <lastmod>2026-11-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://scan.aixuno.com/zh/guides/multi-page-pdf.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://scan.aixuno.com/guides/multi-page-pdf.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://scan.aixuno.com/guides/multi-page-pdf.html"/>
+  </url>
 </urlset>

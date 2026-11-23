@@ -1744,6 +1744,114 @@ body {
   color: var(--accent);
 }
 
+/* ---------- 教程页 ---------- */
+
+.breadcrumb {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+  margin: 0 0 20px;
+  font-size: 13px;
+  color: var(--ink-soft);
+}
+
+.breadcrumb a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+.prose-page h3 {
+  font-size: 17px;
+  margin: 24px 0 8px;
+}
+
+.prose-page ol {
+  padding-left: 22px;
+}
+
+.prose-page ol li {
+  color: #374151;
+  font-size: 15px;
+  margin: 6px 0;
+}
+
+.prose-page .lead {
+  font-size: 16px;
+  color: #1f2937;
+}
+
+.prose-page table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 16px 0;
+  font-size: 14px;
+}
+
+.prose-page th,
+.prose-page td {
+  border: 1px solid var(--line);
+  padding: 8px 10px;
+  text-align: left;
+  color: #374151;
+}
+
+.prose-page th {
+  background: var(--bg-soft);
+  color: var(--ink);
+}
+
+.guide-cta {
+  margin: 28px 0 8px;
+  padding: 20px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: var(--bg-soft);
+}
+
+.guide-cta p {
+  margin: 0 0 12px;
+}
+
+.guide-faq h2 {
+  margin-top: 36px;
+}
+
+.guide-faq h3 {
+  font-size: 16px;
+  margin: 20px 0 6px;
+}
+
+.guide-faq p {
+  margin: 0;
+}
+
+.related {
+  margin-top: 40px;
+  padding-top: 24px;
+  border-top: 1px solid var(--line);
+}
+
+.related h2 {
+  font-size: 17px;
+  margin: 0 0 10px;
+}
+
+.related ul {
+  margin: 0;
+}
+
+.guide-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 14px;
+  margin-top: 24px;
+}
+
 /* ---------- 生态卡 ---------- */
 
 .eco-grid {

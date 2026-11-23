@@ -11,14 +11,15 @@ export const NETWORK_SITES = [
 
 const PREFIX = './';
 
-const PAGE_LINKS = [
-  { href: `${PREFIX}about.html`, key: 'footer_about' },
-  { href: `${PREFIX}contact.html`, key: 'footer_contact' },
-  { href: `${PREFIX}privacy.html`, key: 'nav_privacy' },
-  { href: `${PREFIX}terms.html`, key: 'footer_terms' },
-  { href: `${PREFIX}disclaimer.html`, key: 'footer_disclaimer' },
-  { href: `${PREFIX}changelog.html`, key: 'footer_changelog' },
-  { href: `${PREFIX}index.html#faq`, key: 'nav_faq' },
+const pageLinks = (prefix) => [
+  { href: `${prefix}guides/index.html`, key: 'nav_guides' },
+  { href: `${prefix}about.html`, key: 'footer_about' },
+  { href: `${prefix}contact.html`, key: 'footer_contact' },
+  { href: `${prefix}privacy.html`, key: 'nav_privacy' },
+  { href: `${prefix}terms.html`, key: 'footer_terms' },
+  { href: `${prefix}disclaimer.html`, key: 'footer_disclaimer' },
+  { href: `${prefix}changelog.html`, key: 'footer_changelog' },
+  { href: `${prefix}index.html#faq`, key: 'nav_faq' },
 ];
 
 export function renderSiteNetwork(currentId) {
@@ -34,7 +35,7 @@ export function renderSiteNetwork(currentId) {
   host.innerHTML = `<nav class="site-network" aria-label="Aixuno products"><div class="site-network__inner"><span class="site-net__brand" aria-hidden="true">Aixuno</span>${items}</div></nav>`;
 }
 
-export function renderFooterNav(currentId) {
+export function renderFooterNav(currentId, prefix = PREFIX) {
   const sitesHost = document.getElementById('footer-sites');
   if (sitesHost) {
     const links = NETWORK_SITES.map((site) => {
@@ -47,7 +48,7 @@ export function renderFooterNav(currentId) {
   }
   const pagesHost = document.getElementById('footer-pages');
   if (pagesHost) {
-    const links = PAGE_LINKS.map((link) => `<a href="${link.href}" data-i18n="${link.key}"></a>`).join('');
+    const links = pageLinks(prefix).map((link) => `<a href="${link.href}" data-i18n="${link.key}"></a>`).join('');
     pagesHost.innerHTML = `<nav class="footer-nav" aria-label="Site pages">${links}</nav>`;
   }
 }

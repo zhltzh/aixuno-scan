@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>扫描件怎么转成可编辑文字？OCR 识别完整教程 - Aixuno Scan</title>
+    <meta name="description" content="扫描件是图片，不能复制和搜索？用 OCR 把扫描件转成可编辑文字：中英文识别、导出 TXT 或 Markdown，全过程在浏览器本地完成。" />
+    <meta name="theme-color" content="#070b16" />
+    <link rel="canonical" href="https://scan.aixuno.com/zh/guides/ocr-editable-text.html" />
+    <link rel="alternate" hreflang="zh-CN" href="https://scan.aixuno.com/zh/guides/ocr-editable-text.html" />
+    <link rel="alternate" hreflang="en" href="https://scan.aixuno.com/guides/ocr-editable-text.html" />
+    <link rel="alternate" hreflang="x-default" href="https://scan.aixuno.com/guides/ocr-editable-text.html" />
+    <meta property="og:type" content="article" />
+    <meta property="og:site_name" content="Aixuno Scan" />
+    <meta property="og:title" content="扫描件怎么转成可编辑文字？OCR 识别完整教程" />
+    <meta property="og:description" content="把扫描件转成可编辑文字的完整方法：识别原理、提高准确率的技巧、导出 TXT 与 Markdown。" />
+    <meta property="og:url" content="https://scan.aixuno.com/zh/guides/ocr-editable-text.html" />
+    <meta property="og:image" content="https://scan.aixuno.com/og-image.png" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='5' fill='%232563eb'/%3E%3Cpath fill='%23fff' d='M17 5H7a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2Zm0 12H7l2.5-3 2 2.5 2.5-3 3.5 3.5Zm-6.4-4.8a1.4 1.4 0 1 0 0-2.8 1.4 1.4 0 0 0 0 2.8Z'/%3E%3C/svg%3E" />
+    <link rel="stylesheet" href="/src/style.css" />
+    <link rel="preconnect" href="https://hm.baidu.com">
+    <link rel="dns-prefetch" href="https://hm.baidu.com">
+  <script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?ef887868142b18a0c32bd9e20da7d91f";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Article","headline":"扫描件怎么转成可编辑文字？OCR 识别完整教程","description":"扫描件是图片，不能复制和搜索？用 OCR 把扫描件转成可编辑文字，并导出 TXT 或 Markdown，全程浏览器本地处理。","url":"https://scan.aixuno.com/zh/guides/ocr-editable-text.html","mainEntityOfPage":{"@type":"WebPage","@id":"https://scan.aixuno.com/zh/guides/ocr-editable-text.html"},"inLanguage":"zh-CN","datePublished":"2026-11-23","dateModified":"2026-11-23","author":{"@type":"Organization","name":"Aixuno Scan","url":"https://scan.aixuno.com/"},"publisher":{"@type":"Organization","name":"Aixuno Scan","url":"https://scan.aixuno.com/"},"image":"https://scan.aixuno.com/og-image.png"},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"扫描件可以直接复制文字吗？","acceptedAnswer":{"@type":"Answer","text":"普通扫描件本质上是图片，文字无法选中复制。需要先用 OCR 文字识别把图片里的文字转成文本，才能编辑、复制和搜索。"}},{"@type":"Question","name":"OCR 识别中文准确吗？","acceptedAnswer":{"@type":"Answer","text":"印刷体中文在清晰扫描件上的识别准确率通常很高。手写体、艺术字、印章上的文字容易出错，建议识别后快速校对一遍。"}},{"@type":"Question","name":"识别过程会上传文件吗？","acceptedAnswer":{"@type":"Answer","text":"Aixuno Scan 的 OCR 在浏览器本地运行，语言包下载完成后即可离线识别，扫描件不会上传到服务器。"}},{"@type":"Question","name":"识别结果能导出成什么格式？","acceptedAnswer":{"@type":"Answer","text":"可以一键复制，也可以下载为 TXT 纯文本或 Markdown 文件，方便粘贴到文档或导入笔记软件。"}}]},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"首页","item":"https://scan.aixuno.com/zh/"},{"@type":"ListItem","position":2,"name":"教程","item":"https://scan.aixuno.com/zh/guides/index.html"},{"@type":"ListItem","position":3,"name":"扫描件转可编辑文字","item":"https://scan.aixuno.com/zh/guides/ocr-editable-text.html"}]}]}</script>
+  </head>
+  <body>
+    <div id="site-network"></div>
+    <header class="topbar">
+      <div class="brand">
+        <a href="../index.html">Aixuno</a>
+        <span class="brand-sep">/</span>
+        <span class="brand-current">Scan</span>
+      </div>
+      <nav class="topnav">
+        <a href="../index.html" data-i18n="nav_scan">开始扫描</a>
+        <a href="../index.html#how-it-works" data-i18n="nav_how">工作原理</a>
+        <a href="./index.html" data-i18n="nav_guides">教程</a>
+        <a href="../index.html#faq" data-i18n="nav_faq">常见问题</a>
+      </nav>
+      <div class="topbar-right">
+        <div class="lang-switch" id="lang-switch" role="group" aria-label="语言">
+          <a class="lang-btn active" href="./ocr-editable-text.html" hreflang="zh-CN" aria-current="page">中文</a>
+          <a class="lang-btn" href="../../guides/ocr-editable-text.html" hreflang="en">EN</a>
+        </div>
+      </div>
+    </header>
+    <main id="app">
+      <section class="prose-page">
+        <nav class="breadcrumb" aria-label="面包屑">
+          <a href="../index.html">首页</a>
+          <span aria-hidden="true">›</span>
+          <a href="./index.html">教程</a>
+          <span aria-hidden="true">›</span>
+          <span>扫描件转可编辑文字</span>
+        </nav>
+        <article>
+          <h1>扫描件怎么转成可编辑文字？OCR 识别完整教程</h1>
+          <p class="updated">更新于 2026 年 11 月 · 约 6 分钟阅读</p>
+          <p class="lead">
+            扫描件怎么转成可编辑文字？答案是 OCR（光学字符识别）。扫描件本质上是图片，里面的字只是像素，既选不中也搜不到，只有经过 OCR 识别，才能把扫描件转成可以编辑、复制、检索的文本。这篇教程讲清楚识别原理、实操步骤、提高准确率的技巧，以及怎样在浏览器里直接完成识别而不上传文件。
+          </p>
+
+          <h2>为什么扫描件里的文字不能直接复制</h2>
+          <p>
+            用相机或扫描仪生成的 PDF，通常是「图片型 PDF」：一页就是一张位图。你能看到字，但文件里没有任何字符数据，所以：
+          </p>
+          <ul>
+            <li>鼠标拖选不到文字，Ctrl+C 复制出来是空白；</li>
+            <li>PDF 阅读器里搜关键词，一个都搜不到；</li>
+            <li>想改个日期或金额，只能重新排版；</li>
+            <li>要引用其中一段话，只能一个字一个字敲。</li>
+          </ul>
+          <p>
+            OCR 就是把这些像素重新「读」成字符。它先找出画面里的文字行与字符轮廓，再和语言模型比对，输出带换行和空格的纯文本。对印刷体来说，这一步已经相当可靠。
+          </p>
+
+          <h2>把扫描件转成文字的操作步骤</h2>
+          <ol>
+            <li>
+              <strong>先得到一张清晰的扫描件。</strong>识别效果七成取决于原图。拍照时避免阴影和倾斜，把纸张四角对准取景框，导出前用黑白或灰度滤镜压掉背景噪点。
+            </li>
+            <li>
+              <strong>选择识别语言。</strong>中文资料就选中英混合，纯英文合同选英文。语言选错会让准确率明显下降，尤其是数字和标点。
+            </li>
+            <li>
+              <strong>逐页执行识别。</strong>多页文件一页一页识别，出问题时容易定位是哪一页糊了，而不是整份重来。
+            </li>
+            <li>
+              <strong>校对关键字段。</strong>重点看数字、金额、日期、姓名、编号——这些恰恰是 OCR 最容易出错的地方，也是后果最严重的地方。
+            </li>
+            <li>
+              <strong>导出为文本文件。</strong>选择 TXT 存成纯文本，或 Markdown 保留段落结构，方便后续粘贴到办公文档、笔记或代码仓库。
+            </li>
+          </ol>
+
+          <h2>提高识别准确率的五个细节</h2>
+          <h3>1. 让文字占满画面</h3>
+          <p>
+            纸张在画面里越大，每个字符占的像素越多，识别就越稳。裁掉多余桌面和手指，胜过多拍一张高分辨率废图。
+          </p>
+          <h3>2. 提高对比度，别留阴影</h3>
+          <p>
+            阴影会把笔画糊成灰色块。黑白滤镜能把纸面推到纯白、笔画推到纯黑，是印刷体识别最友好的预处理。
+          </p>
+          <h3>3. 保持页面正向</h3>
+          <p>
+            歪超过十几度的页面，识别引擎容易把行切错。先做透视校正，让文字行水平，再送去识别。
+          </p>
+          <h3>4. 分栏内容单独处理</h3>
+          <p>
+            报纸、杂志这类多栏排版，OCR 常把相邻两栏的行串在一起。可以按栏裁切分别识别，或识别后手动重排。
+          </p>
+          <h3>5. 表格与手写降低预期</h3>
+          <p>
+            表格的单元格边界、手写连笔字、艺术字标题都会显著拉低准确率。这类内容建议只把识别结果当草稿，人工核对后再使用。
+          </p>
+
+          <h2>在浏览器里完成本地 OCR</h2>
+          <p>
+            Aixuno Scan 把 OCR 放在浏览器里跑：扫描完一页，点页面上的文字识别按钮，选择中英混合或纯英文，几秒后结果就出现在面板里，可以直接复制，也可以下载成 TXT 或 Markdown。语言包只下载一次，之后就能离线识别，扫描件始终留在你自己的设备上。
+          </p>
+          <div class="guide-cta">
+            <p><strong>试一下：</strong>扫描一张带文字的纸，点识别，看看识别出多少内容。</p>
+            <a class="btn btn-primary" href="../index.html#tool">扫描并识别文字</a>
+          </div>
+
+          <section class="guide-faq">
+            <h2>常见问题</h2>
+            <h3>扫描件可以直接复制文字吗？</h3>
+            <p>普通扫描件本质上是图片，文字无法选中复制。需要先用 OCR 文字识别把图片里的文字转成文本，才能编辑、复制和搜索。</p>
+            <h3>OCR 识别中文准确吗？</h3>
+            <p>印刷体中文在清晰扫描件上的识别准确率通常很高。手写体、艺术字、印章上的文字容易出错，建议识别后快速校对一遍。</p>
+            <h3>识别过程会上传文件吗？</h3>
+            <p>Aixuno Scan 的 OCR 在浏览器本地运行，语言包下载完成后即可离线识别，扫描件不会上传到服务器。</p>
+            <h3>识别结果能导出成什么格式？</h3>
+            <p>可以一键复制，也可以下载为 TXT 纯文本或 Markdown 文件，方便粘贴到文档或导入笔记软件。</p>
+          </section>
+
+          <section class="related">
+            <h2>继续阅读</h2>
+            <ul>
+              <li><a href="./paper-to-pdf-scan.html">手机怎么把纸质文件扫描成 PDF</a></li>
+              <li><a href="./remove-shadow-clear.html">扫描件有阴影、发灰怎么调清晰</a></li>
+              <li><a href="./scan-id-card.html">身份证怎么扫描才规范</a></li>
+            </ul>
+          </section>
+        </article>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <p class="footer-brand">Aixuno <span class="grad">Scan</span></p>
+      <p class="footer-tag" data-i18n="footer_tag">在浏览器本地完成扫描、增强与文字识别。</p>
+      <div id="footer-sites"></div>
+      <div id="footer-pages"></div>
+      <p class="footer-note" data-i18n="footer_note">100% 本地处理 · 无账号 · 无上传</p>
+    </footer>
+    <script type="module">
+      import { applyStaticTexts } from '/src/app/i18n.js';
+      import { renderSiteNetwork, renderFooterNav } from '/src/app/network.js';
+      renderSiteNetwork('scan');
+      renderFooterNav('scan', '../../zh/');
+      applyStaticTexts();
+    </script>
+  </body>
+</html>

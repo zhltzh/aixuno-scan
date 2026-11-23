@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>How to Convert a Scan into Editable Text with OCR</title>
+    <meta name="description" content="A scan is just an image — you cannot select or search its text. Learn how OCR turns a scan into editable text, and how to export it as TXT or Markdown, processed locally in your browser." />
+    <meta name="theme-color" content="#070b16" />
+    <link rel="canonical" href="https://scan.aixuno.com/guides/ocr-editable-text.html" />
+    <link rel="alternate" hreflang="zh-CN" href="https://scan.aixuno.com/zh/guides/ocr-editable-text.html" />
+    <link rel="alternate" hreflang="en" href="https://scan.aixuno.com/guides/ocr-editable-text.html" />
+    <link rel="alternate" hreflang="x-default" href="https://scan.aixuno.com/guides/ocr-editable-text.html" />
+    <meta property="og:type" content="article" />
+    <meta property="og:site_name" content="Aixuno Scan" />
+    <meta property="og:title" content="How to Convert a Scan into Editable Text with OCR" />
+    <meta property="og:description" content="Understand OCR, improve recognition accuracy, and export scans as TXT or Markdown — all in the browser." />
+    <meta property="og:url" content="https://scan.aixuno.com/guides/ocr-editable-text.html" />
+    <meta property="og:image" content="https://scan.aixuno.com/og-image.png" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='5' fill='%232563eb'/%3E%3Cpath fill='%23fff' d='M17 5H7a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2Zm0 12H7l2.5-3 2 2.5 2.5-3 3.5 3.5Zm-6.4-4.8a1.4 1.4 0 1 0 0-2.8 1.4 1.4 0 0 0 0 2.8Z'/%3E%3C/svg%3E" />
+    <link rel="stylesheet" href="/src/style.css" />
+    <link rel="preconnect" href="https://hm.baidu.com">
+    <link rel="dns-prefetch" href="https://hm.baidu.com">
+  <script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?ef887868142b18a0c32bd9e20da7d91f";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Article","headline":"How to Convert a Scan into Editable Text with OCR","description":"A scan is just an image. Learn how OCR turns a scan into editable text, how to improve accuracy, and how to export TXT or Markdown locally in the browser.","url":"https://scan.aixuno.com/guides/ocr-editable-text.html","mainEntityOfPage":{"@type":"WebPage","@id":"https://scan.aixuno.com/guides/ocr-editable-text.html"},"inLanguage":"en","datePublished":"2026-11-23","dateModified":"2026-11-23","author":{"@type":"Organization","name":"Aixuno Scan","url":"https://scan.aixuno.com/"},"publisher":{"@type":"Organization","name":"Aixuno Scan","url":"https://scan.aixuno.com/"},"image":"https://scan.aixuno.com/og-image.png"},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Why can I not select text in a scanned PDF?","acceptedAnswer":{"@type":"Answer","text":"Most scanned PDFs are image-only: each page is a bitmap with no character data behind it. The text has to be recovered with OCR before it can be selected, copied or searched."}},{"@type":"Question","name":"How accurate is OCR on printed documents?","acceptedAnswer":{"@type":"Answer","text":"On clean scans of printed text, accuracy is usually very high. Handwriting, decorative fonts, stamps and dense tables still require a manual proofread."}},{"@type":"Question","name":"Does OCR upload my document?","acceptedAnswer":{"@type":"Answer","text":"With Aixuno Scan, recognition runs inside your browser. Once the language data is cached, it can work offline, and your scan is never sent to a server."}},{"@type":"Question","name":"What formats can I export the recognised text to?","acceptedAnswer":{"@type":"Answer","text":"You can copy the text directly, or download it as a plain TXT file or a Markdown file that keeps paragraph structure."}}]},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://scan.aixuno.com/"},{"@type":"ListItem","position":2,"name":"Guides","item":"https://scan.aixuno.com/guides/index.html"},{"@type":"ListItem","position":3,"name":"Convert a scan to editable text","item":"https://scan.aixuno.com/guides/ocr-editable-text.html"}]}]}</script>
+  </head>
+  <body>
+    <div id="site-network"></div>
+    <header class="topbar">
+      <div class="brand">
+        <a href="../index.html">Aixuno</a>
+        <span class="brand-sep">/</span>
+        <span class="brand-current">Scan</span>
+      </div>
+      <nav class="topnav">
+        <a href="../index.html" data-i18n="nav_scan">Scan</a>
+        <a href="../index.html#how-it-works" data-i18n="nav_how">How it works</a>
+        <a href="./index.html" data-i18n="nav_guides">Guides</a>
+        <a href="../index.html#faq" data-i18n="nav_faq">FAQ</a>
+      </nav>
+      <div class="topbar-right">
+        <div class="lang-switch" id="lang-switch" role="group" aria-label="Language">
+          <a class="lang-btn active" href="./ocr-editable-text.html" hreflang="en" aria-current="page">EN</a>
+          <a class="lang-btn" href="../zh/guides/ocr-editable-text.html" hreflang="zh-CN">中文</a>
+        </div>
+      </div>
+    </header>
+    <main id="app">
+      <section class="prose-page">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="../index.html">Home</a>
+          <span aria-hidden="true">›</span>
+          <a href="./index.html">Guides</a>
+          <span aria-hidden="true">›</span>
+          <span>Convert a scan to editable text</span>
+        </nav>
+        <article>
+          <h1>How to Convert a Scan into Editable Text with OCR</h1>
+          <p class="updated">Updated November 2026 · about 6 minutes to read</p>
+          <p class="lead">
+            A scan is a picture, not text. To convert a scan into editable text you need OCR — optical character recognition. Until that step, every letter is just pixels: you cannot select it, copy it, or search for it. This guide explains what OCR actually does, the workflow that produces the best results, the details that measurably improve accuracy, and how to run the whole thing in your browser without uploading your document anywhere.
+          </p>
+
+          <h2>Why the text in a scan cannot be selected</h2>
+          <p>
+            PDFs produced by cameras or scanners are usually image-only PDFs: one page equals one bitmap. You can see the words, but the file contains no character data at all. That means:
+          </p>
+          <ul>
+            <li>Dragging over the text selects nothing, and copying yields an empty clipboard.</li>
+            <li>Searching for a keyword in a PDF reader returns zero hits.</li>
+            <li>Changing a date or an amount requires rebuilding the layout from scratch.</li>
+            <li>Quoting a sentence means retyping it by hand.</li>
+          </ul>
+          <p>
+            OCR reads those pixels back into characters. It locates text lines and character shapes, compares them against a language model, and outputs plain text with line breaks and spacing. For printed material this step is remarkably reliable.
+          </p>
+
+          <h2>The workflow</h2>
+          <ol>
+            <li>
+              <strong>Start from a clean scan.</strong> Roughly seventy percent of recognition quality is decided by the input image. Avoid shadows and skew, line the corners up with the frame, and apply a black &amp; white or greyscale filter to flatten the background before exporting.
+            </li>
+            <li>
+              <strong>Pick the right language.</strong> Choose the combined Chinese and English model for Chinese documents, and English only for English contracts. A wrong language choice visibly hurts accuracy, especially on digits and punctuation.
+            </li>
+            <li>
+              <strong>Recognise page by page.</strong> Running pages individually makes it obvious which sheet was blurry, instead of forcing you to redo the whole document.
+            </li>
+            <li>
+              <strong>Proofread the fields that matter.</strong> Check numbers, amounts, dates, names and reference codes. Those are exactly where OCR slips, and exactly where a mistake is expensive.
+            </li>
+            <li>
+              <strong>Export as a text file.</strong> Save TXT for clean plain text, or Markdown when you want paragraph structure preserved for later pasting into documents, notes or a repository.
+            </li>
+          </ol>
+
+          <h2>Five details that improve accuracy</h2>
+          <h3>1. Fill the frame with the page</h3>
+          <p>
+            The larger the sheet in the photo, the more pixels each character gets and the steadier recognition becomes. Cropping away the desk and your fingers beats taking another high-resolution shot of the same bad framing.
+          </p>
+          <h3>2. Add contrast, remove shadows</h3>
+          <p>
+            Shadows smear strokes into grey blobs. A black &amp; white filter pushes the paper to pure white and the ink to pure black, which is the friendliest preprocessing for printed text.
+          </p>
+          <h3>3. Keep the page upright</h3>
+          <p>
+            Pages tilted by more than ten degrees confuse line segmentation. Correct perspective first so text lines run horizontally, then recognise.
+          </p>
+          <h3>4. Handle columns separately</h3>
+          <p>
+            Newspapers and magazines with multiple columns often get their lines stitched together across the gutter. Crop each column and recognise them one at a time, or reorder the text afterwards.
+          </p>
+          <h3>5. Lower your expectations for tables and handwriting</h3>
+          <p>
+            Cell borders, cursive handwriting and decorative headlines all reduce accuracy noticeably. Treat those results as drafts and verify them by hand before using them.
+          </p>
+
+          <h2>Running OCR locally in the browser</h2>
+          <p>
+            Aixuno Scan performs OCR inside your browser. After scanning a page, hit the recognition button, choose Chinese + English or English, and the text appears in a panel a few seconds later — ready to copy, or to download as TXT or Markdown. The language data is fetched once and cached, so later sessions work offline, and the scan itself never leaves your device. For a long document, recognition cost grows with page count rather than with file size, so processing a hundred pages one at a time stays predictable and you always know which page produced which text.
+          </p>
+          <div class="guide-cta">
+            <p><strong>Try it:</strong> scan a page with text, run recognition, and see how much comes back.</p>
+            <a class="btn btn-primary" href="../index.html#tool">Scan and recognise text</a>
+          </div>
+
+          <section class="guide-faq">
+            <h2>Frequently asked questions</h2>
+            <h3>Why can I not select text in a scanned PDF?</h3>
+            <p>Most scanned PDFs are image-only: each page is a bitmap with no character data behind it. The text has to be recovered with OCR before it can be selected, copied or searched.</p>
+            <h3>How accurate is OCR on printed documents?</h3>
+            <p>On clean scans of printed text, accuracy is usually very high. Handwriting, decorative fonts, stamps and dense tables still require a manual proofread.</p>
+            <h3>Does OCR upload my document?</h3>
+            <p>With Aixuno Scan, recognition runs inside your browser. Once the language data is cached, it can work offline, and your scan is never sent to a server.</p>
+            <h3>What formats can I export the recognised text to?</h3>
+            <p>You can copy the text directly, or download it as a plain TXT file or a Markdown file that keeps paragraph structure.</p>
+          </section>
+
+          <section class="related">
+            <h2>Keep reading</h2>
+            <ul>
+              <li><a href="./paper-to-pdf-scan.html">How to scan paper documents to PDF on your phone</a></li>
+              <li><a href="./remove-shadow-clear.html">How to remove shadows and sharpen a scan</a></li>
+              <li><a href="./scan-id-card.html">How to scan an ID card properly</a></li>
+            </ul>
+          </section>
+        </article>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <p class="footer-brand">Aixuno <span class="grad">Scan</span></p>
+      <p class="footer-tag" data-i18n="footer_tag">Scan, enhance, and OCR documents — locally in your browser.</p>
+      <div id="footer-sites"></div>
+      <div id="footer-pages"></div>
+      <p class="footer-note" data-i18n="footer_note">100% local processing · no accounts · no uploads</p>
+    </footer>
+    <script type="module">
+      import { applyStaticTexts } from '/src/app/i18n.js';
+      import { renderSiteNetwork, renderFooterNav } from '/src/app/network.js';
+      renderSiteNetwork('scan');
+      renderFooterNav('scan', '../');
+      applyStaticTexts();
+    </script>
+  </body>
+</html>

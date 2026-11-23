@@ -42,6 +42,22 @@
 - 免责声明：https://scan.aixuno.com/zh/disclaimer.html
 - 更新日志：https://scan.aixuno.com/zh/changelog.html
 
+## 教程（中文）
+- 教程列表：https://scan.aixuno.com/zh/guides/index.html
+- 手机怎么把纸质文件扫描成 PDF：https://scan.aixuno.com/zh/guides/paper-to-pdf-scan.html
+- 扫描件怎么转成可编辑文字（OCR）：https://scan.aixuno.com/zh/guides/ocr-editable-text.html
+- 身份证怎么扫描：https://scan.aixuno.com/zh/guides/scan-id-card.html
+- 扫描件去阴影与调清晰：https://scan.aixuno.com/zh/guides/remove-shadow-clear.html
+- 多页文档扫描成一个 PDF：https://scan.aixuno.com/zh/guides/multi-page-pdf.html
+
+## Guides (English)
+- Guide index：https://scan.aixuno.com/guides/index.html
+- Scan paper documents to PDF：https://scan.aixuno.com/guides/paper-to-pdf-scan.html
+- Convert a scan into editable text with OCR：https://scan.aixuno.com/guides/ocr-editable-text.html
+- Scan an ID card with your phone：https://scan.aixuno.com/guides/scan-id-card.html
+- Remove shadows from a scan：https://scan.aixuno.com/guides/remove-shadow-clear.html
+- Scan multiple pages into one PDF：https://scan.aixuno.com/guides/multi-page-pdf.html
+
 ## Aixuno 工具生态
 - Markdown 转换：https://aixuno.com/
 - 图片工具：https://image.aixuno.com/
