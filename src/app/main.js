@@ -15,7 +15,7 @@ import { renderPageToCanvas } from './render.js';
 import { buildPDF, timestampedFilename } from './pdf.js';
 import { recognizePage, OCR_LANGUAGES } from './ocr.js';
 import { pageToPNGBlob, pagesToZIPBlob } from './images.js';
-import { t, applyStaticTexts, setLang, getLang, LANGUAGES } from './i18n.js';
+import { t, applyStaticTexts } from './i18n.js';
 import { renderSiteNetwork, renderFooterNav } from './network.js';
 
 renderSiteNetwork('scan');
@@ -67,20 +67,6 @@ function refreshOcrLangOptions() {
 
 refreshOcrLangOptions();
 
-const langSwitch = document.getElementById('lang-switch');
-function renderLangSwitch() {
-  langSwitch.innerHTML = '';
-  for (const lang of LANGUAGES) {
-    const btn = document.createElement('button');
-    btn.type = 'button';
-    btn.className = 'lang-btn' + (getLang() === lang.id ? ' active' : '');
-    btn.textContent = lang.label;
-    btn.addEventListener('click', () => setLang(lang.id));
-    langSwitch.appendChild(btn);
-  }
-}
-renderLangSwitch();
-
 applyStaticTexts();
 
 // 首屏 CTA：直接聚焦上传区，避免用户再滚动寻找操作入口
@@ -97,7 +83,6 @@ document.querySelectorAll('a[href="#tool"]').forEach((cta) => {
 
 window.addEventListener('langchange', () => {
   refreshOcrLangOptions();
-  renderLangSwitch();
   renderPageList();
 });
 
