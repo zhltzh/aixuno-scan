@@ -130,6 +130,7 @@ body {
 .site-net__mark--rose { background: linear-gradient(135deg, #f43f5e, #ef4444); }
 .site-net__mark--violet { background: linear-gradient(135deg, #8b5cf6, #6366f1); }
 .site-net__mark--blue { background: linear-gradient(135deg, #3b82f6, #1d4ed8); }
+.site-net__mark--pink { background: linear-gradient(135deg, #ec4899, #f43f5e); }
 .site-net__mark--indigo { background: linear-gradient(135deg, #6366f1, #4f46e5); }
 .site-net__mark--cyan { background: linear-gradient(135deg, #06b6d4, #2563eb); }
 

@@ -5,6 +5,7 @@ export const NETWORK_SITES = [
   { id: 'pdf', href: 'https://pdf.aixuno.com/', mark: 'PDF', tone: 'rose', key: 'net_pdf' },
   { id: 'bg', href: 'https://bg.aixuno.com/', mark: 'BG', tone: 'violet', key: 'net_bg' },
   { id: 'scan', href: 'https://scan.aixuno.com/', mark: 'DOC', tone: 'blue', key: 'net_scan' },
+  { id: 'idphoto', href: 'https://idphoto.aixuno.com/', mark: 'ID', tone: 'pink', key: 'net_idphoto' },
   { id: 'restore', href: 'https://restore.aixuno.com/', mark: 'FIX', tone: 'indigo', key: 'net_restore' },
   { id: 'watermark', href: 'https://watermark.aixuno.com/', mark: 'WM', tone: 'cyan', key: 'net_watermark' },
 ];
